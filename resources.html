@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Resources — Colleen Jorgensen, D.O.</title>
+  <meta name="description" content="Free pain care tools, movement practices, and educational resources from Colleen Jorgensen, D.O.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Milonga:wght@400&amp;display=swap"><style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap');
+    :root{--color-primary:#5C4033;--color-secondary:#8B6F5E;--color-accent:#C17F5A;--color-bg:#FAF7F2;--color-bg-alt:#F2EDE4;--color-text:#2A1F1A;--color-text-muted:#7A6155;--font-heading:'Cormorant Garamond',Georgia,serif;--font-body:'DM Sans',system-ui,sans-serif;--space-xs:.5rem;--space-sm:1rem;--space-md:1.5rem;--space-lg:2.5rem;--space-xl:4rem;--container-width:1100px;--radius:12px;--shadow:0 4px 24px rgba(42,31,26,0.08);--color-accent-soft:#E4C7A8;--color-blush:#D4937A;--color-border:#DDD0C0;  --font-dare: 'Milonga', system-ui, sans-serif;
+}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{font-size:16px;scroll-behavior:smooth;}
+    body{font-family:var(--font-body);font-weight:300;background:var(--color-bg);color:var(--color-text);line-height:1.7;-webkit-font-smoothing:antialiased;}
+    img{max-width:100%;height:auto;display:block;}
+    a{color:inherit;text-decoration:none;}
+    ul{list-style:none;}
+    .container{width:100%;max-width:var(--container-width);margin:0 auto;padding:0 var(--space-md);}
+    h1,h2,h3,h4,h5{font-family:var(--font-heading);line-height:1.2;color:var(--color-primary);}
+    h1{font-size:clamp(2rem,5vw,3.2rem);font-weight:300;}
+    h2{font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:300;}
+    h3{font-size:clamp(1.15rem,2vw,1.5rem);font-weight:400;}
+    h4{font-size:1.05rem;font-weight:400;}
+    p{margin-bottom:var(--space-sm);}
+    p:last-child{margin-bottom:0;}
+    .section-label{font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--color-accent);margin-bottom:var(--space-xs);display:block;}
+    .btn{display:inline-block;padding:.8rem 1.8rem;border-radius:50px;font-family:var(--font-body);font-size:.95rem;font-weight:500;cursor:pointer;transition:all .2s ease;border:2px solid transparent;text-align:center;}
+    .btn-primary{background:var(--color-accent);color:#fff;border-color:var(--color-accent);}
+    .btn-primary:hover{background:var(--color-primary);border-color:var(--color-primary);}
+    .btn-outline{background:transparent;color:var(--color-accent);border-color:var(--color-accent);}
+    .btn-outline:hover{background:var(--color-accent);color:#fff;}
+    .btn-secondary{background:var(--color-secondary);color:#fff;border-color:var(--color-secondary);}
+    .btn-secondary:hover{background:#627058;border-color:#627058;}
+    .btn-white{background:#fff;color:var(--color-accent);border-color:#fff;}
+    .btn-white:hover{background:var(--color-bg-alt);}
+    #main-nav{position:sticky;top:0;z-index:1000;background:var(--color-bg);border-bottom:1px solid var(--color-border);box-shadow:0 2px 12px rgba(42,31,26,.06);}
+    .nav-inner{max-width:var(--container-width);margin:0 auto;padding:0 var(--space-md);display:flex;align-items:center;justify-content:space-between;height:70px;}
+    .nav-logo{font-family:var(--font-heading);font-size:1.05rem;font-weight:500;color:var(--color-text);white-space:nowrap;line-height:1.2;}
+    .nav-logo span{display: block;font-family: var(--font-body);font-size: 0.68rem;font-weight: 400;letter-spacing: 0.10em;text-transform: uppercase;color: var(--color-text-muted);}
+    .nav-links{display:flex;align-items:center;gap:1.1rem;}
+    .nav-links a{font-size:.85rem;font-weight:500;color:var(--color-text-muted);transition:color .2s;white-space:nowrap;}
+    .nav-links a:hover,.nav-links a.active{color:var(--color-primary);}
+    .nav-links .nav-cta{background:var(--color-accent);color:#fff !important;padding:.45rem 1.1rem;border-radius:50px;}
+    .nav-links .nav-cta:hover{background:var(--color-primary) !important;}
+    .hamburger{display:none;flex-direction:column;justify-content:space-around;width:28px;height:22px;background:none;border:none;cursor:pointer;padding:0;z-index:9001;flex-shrink:0;}
+    .hamburger span{display:block;width:100%;height:2px;background:var(--color-text);border-radius:2px;transition:all .3s ease;}
+    @media(max-width:960px){
+      .hamburger{display:flex;}
+      .nav-links{display:none;position:fixed;top:70px;left:0;right:0;background:var(--color-bg);flex-direction:column;align-items:flex-start;gap:0;padding:var(--space-xs) 0;border-bottom:2px solid var(--color-border);box-shadow:0 8px 24px rgba(42,31,26,.1);z-index:9000;overflow-y:auto;max-height:calc(100vh - 70px);}
+      .nav-links.open{display:flex;}
+      .nav-links li{width:100%;}
+      .nav-links a{display:block;padding:.85rem var(--space-md);font-size:1rem;border-bottom:1px solid var(--color-border);}
+      .nav-links .nav-cta{margin:var(--space-sm) var(--space-md);display:inline-block;border-radius:50px;}
+    }
+    footer{background:#2E211A;color:rgba(255,255,255,.85);padding:var(--space-xl) 0 var(--space-md);}
+    .footer-inner{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:var(--space-lg);padding-bottom:var(--space-lg);border-bottom:1px solid rgba(255,255,255,.08);}
+    .footer-brand strong{font-family:var(--font-heading);font-size:1.05rem;font-weight:400;color:#fff;display:block;margin-bottom:var(--space-xs);}
+    .footer-brand p{color:rgba(255,255,255,.55);font-size:.85rem;margin-bottom:.25rem;}
+    .footer-nav{display:flex;flex-direction:column;gap:.5rem;}
+    .footer-nav a{color:rgba(255,255,255,.6);font-size:.85rem;transition:color .2s;}
+    .footer-nav a:hover{color:var(--color-accent);}
+    .footer-contact a{color:rgba(255,255,255,.6);font-size:.875rem;display:block;margin-bottom:.5rem;transition:color .2s;}
+    .footer-contact a:hover{color:var(--color-accent);}
+    .social-links{display:flex;gap:1rem;margin-top:var(--space-sm);flex-wrap:wrap;}
+    .social-links a{color:rgba(255,255,255,.6);font-size:.85rem;transition:color .2s;}
+    .social-links a:hover{color:var(--color-accent);}
+    .footer-bottom{text-align:center;padding-top:var(--space-md);}
+    .footer-bottom p{color:rgba(255,255,255,.3);font-size:.78rem;margin:0;}
+    @media(max-width:700px){.footer-inner{grid-template-columns:1fr;gap:var(--space-md);}}
+    .section{padding:var(--space-xl) 0;}
+    .section-alt{background:var(--color-bg-alt);}
+    .section-dark{background:#2E211A;}
+    .section-dark h2,.section-dark h3,.section-dark h4{color:#fff;}
+    .section-dark p,.section-dark li{color:rgba(255,255,255,.72);}
+    .section-dark .section-label{color:var(--color-accent);}
+    .section-primary{background:var(--color-primary);}
+    .section-primary h2,.section-primary h3,.section-primary p{color:#fff;}
+    .section-primary .section-label{color:var(--color-accent-soft);}
+    .section-header{margin-bottom:var(--space-lg);}
+    .section-header p{color:var(--color-text-muted);max-width:600px;}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-lg);}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-md);}
+    .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-md);}
+    @media(max-width:900px){.grid-3,.grid-4{grid-template-columns:1fr 1fr;}}
+    @media(max-width:600px){.grid-2,.grid-3,.grid-4{grid-template-columns:1fr;}}
+    .card{background:var(--color-bg);border-radius:var(--radius);padding:var(--space-md);box-shadow:var(--shadow);}
+    .card-alt{background:var(--color-bg-alt);box-shadow:none;border:1px solid var(--color-border);}
+    .card h3,.card h4{margin-bottom:var(--space-xs);}
+    .card p{color:var(--color-text-muted);font-size:.93rem;}
+    .card-icon{width:48px;height:48px;border-radius:12px;background:var(--color-accent-soft);display:flex;align-items:center;justify-content:center;margin-bottom:var(--space-sm);font-size:1.4rem;}
+    .card-link{display:inline-block;margin-top:var(--space-sm);font-size:.88rem;font-weight:600;color:var(--color-accent);}
+    .card-link:hover{text-decoration:underline;}
+    .testimonial{background:var(--color-bg);border-left:4px solid var(--color-accent);padding:var(--space-md);border-radius:0 var(--radius) var(--radius) 0;}
+    .testimonial blockquote{font-style:italic;font-size:.97rem;line-height:1.75;color:var(--color-text);margin-bottom:var(--space-xs);}
+    .testimonial cite{font-size:.82rem;font-weight:600;color:var(--color-text-muted);font-style:normal;}
+    .cta-section{background:var(--color-bg-alt);padding:var(--space-xl) 0;text-align:center;}
+    .cta-section h2{margin-bottom:var(--space-sm);}
+    .cta-section p{color:var(--color-text-muted);max-width:540px;margin:0 auto var(--space-lg);}
+    .text-center{text-align:center;}
+    .text-muted{color:var(--color-text-muted);}
+    .highlight{color:var(--color-accent);}
+    .divider{border:none;border-top:1px solid var(--color-border);margin:var(--space-lg) 0;}
+    .pill{display:inline-block;background:rgba(228,199,168,.5);color:var(--color-accent);padding:.28rem .8rem;border-radius:50px;font-size:.77rem;font-weight:600;}
+    .pill-teal{background:rgba(212,147,122,.2);color:var(--color-blush);}
+    .stat-box{text-align:center;padding:var(--space-md);}
+    .stat-number{font-family:var(--font-heading);font-size:2.8rem;font-weight:300;color:var(--color-accent);line-height:1;display:block;}
+    .stat-label{font-size:.88rem;color:var(--color-text-muted);margin-top:.25rem;display:block;}
+    .timeline{position:relative;padding-left:2rem;}
+    .timeline::before{content:'';position:absolute;left:.5rem;top:0;bottom:0;width:2px;background:var(--color-border);}
+    .timeline-item{position:relative;margin-bottom:var(--space-md);}
+    .timeline-item::before{content:'';position:absolute;left:-1.6rem;top:.48rem;width:12px;height:12px;border-radius:50%;background:var(--color-accent);}
+    .timeline-item h4{margin-bottom:.25rem;}
+    .timeline-item p{font-size:.9rem;color:var(--color-text-muted);}
+    .faq-item{border-bottom:1px solid var(--color-border);padding:var(--space-sm) 0;}
+    .faq-q{font-weight:600;font-size:1rem;margin-bottom:.4rem;color:var(--color-text);}
+    .faq-a{color:var(--color-text-muted);font-size:.93rem;}
+    .pathway-card{background:var(--color-bg);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s;}
+    .pathway-card:hover{transform:translateY(-4px);box-shadow:0 8px 32px rgba(42,31,26,.12);}
+    .pathway-card-img{height:190px;overflow:hidden;background:var(--color-bg-alt);}
+    .pathway-card-img img{width:100%;height:100%;object-fit:cover;}
+    .pathway-card-body{padding:var(--space-md);}
+    .pathway-card-body h3{margin-bottom:var(--space-xs);}
+    .pathway-card-body p{font-size:.93rem;color:var(--color-text-muted);margin-bottom:var(--space-sm);}
+    .btn-group{display:flex;gap:var(--space-sm);flex-wrap:wrap;}
+    .hero{padding:var(--space-xl) 0;background:var(--color-bg-alt);}
+    .hero h1{margin-bottom:var(--space-sm);}
+    .hero .lead{font-size:1.1rem;color:var(--color-text-muted);margin-bottom:var(--space-lg);max-width:580px;}
+    .hero-two-col{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-xl);align-items:center;}
+    @media(max-width:768px){.hero-two-col{grid-template-columns:1fr;}}
+    .check-list{display:flex;flex-direction:column;gap:.65rem;}
+    .check-list li{display:flex;align-items:flex-start;gap:.6rem;font-size:.93rem;color:var(--color-text-muted);}
+    .check-list li::before{content:'\2713';color:var(--color-primary);font-weight:700;flex-shrink:0;}
+    .num-circle{background:var(--color-primary);color:#fff;font-family:var(--font-heading);font-size:1.3rem;font-weight:700;width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+    .num-circle-teal{background:var(--color-blush);}
+    @media print{#main-nav,footer{display:none;}}
+  </style>
+  
+  
+<style id="__gitqi-section-featured-bundle-styles">.bundle-featured-grid {
+    gap: var(--space-xl);
+    align-items: center;
+}
+@media (max-width: 768px) { /* Adjust to match the hero-two-col media query for grid-2 layout */
+    .bundle-featured-grid {
+        gap: var(--space-lg); /* Smaller gap on smaller screens */
+    }
+}
+
+.bundle-visual-block {
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--color-bg-alt);
+    display: flex;
+    flex-direction: column;
+}
+
+.bundle-image-area {
+    min-height: 340px;
+}
+
+.bundle-image-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.bundle-quote-area {
+    padding: var(--space-md);
+    text-align: center; /* Centers the text content within the quote area */
+}
+
+.bundle-quote {
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+    color: var(--color-text);
+}
+
+.bundle-quote p {
+    font-size: .97rem;
+    line-height: 1.75;
+    margin-bottom: var(--space-xs);
+}
+
+.bundle-quote cite {
+    display: block;
+    font-size: .82rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+    font-style: normal;
+}</style><style id="__gitqi-section-learning-themes-styles">.learning-themes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Default: 3 columns for 6 items */
+    gap: var(--space-md);
+    margin-top: var(--space-lg);
+}
+
+@media(max-width:900px) {
+    .learning-themes-grid {
+        grid-template-columns: 1fr 1fr; /* Medium screens: 2 columns */
+    }
+}
+
+@media(max-width:600px) {
+    .learning-themes-grid {
+        grid-template-columns: 1fr; /* Small screens: 1 column */
+    }
+}</style><style id="__gitqi-section-start-here-styles">/* all CSS needed for this section, including media queries */
+.start-here-content-wrapper {
+    max-width: 760px; /* Custom narrow width for this section's content */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.start-here-steps-wrapper {
+    margin-top: var(--space-lg);
+    position: relative;
+}
+
+/* Main vertical line for the timeline */
+.start-here-steps-wrapper::before {
+    content: '';
+    position: absolute;
+    left: calc(50px / 2); /* Half of num-circle width (50px / 2) */
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--color-border);
+    z-index: 1;
+}
+
+.start-here-step-item {
+    position: relative; /* For positioning num-circle and ::after arrow */
+    margin-bottom: var(--space-lg); /* Space between steps */
+    padding-left: calc(50px + var(--space-md)); /* Space for num-circle + gap to text */
+    display: flex; /* For aligning num-circle and text content */
+    align-items: flex-start;
+    min-height: 50px; /* Ensure item is at least height of num-circle for correct vertical alignment */
+}
+
+.start-here-step-item:last-child {
+    margin-bottom: 0;
+}
+
+.start-here-step-item .num-circle {
+    position: absolute; /* Position num-circle relative to start-here-step-item */
+    left: 0; /* Align with the left edge of start-here-step-item's content */
+    top: 0;
+    z-index: 3; /* Ensure circle is above the line */
+}
+
+.start-here-step-item > div:last-child { /* This targets the text content div (h4, p) */
+    position: relative; /* Ensure text content is above the line if needed */
+    z-index: 2;
+    background: var(--color-bg); /* Background to "cut" the line visually */
+    flex-grow: 1; /* Allow text content to take up available space */
+}
+
+/* Arrowhead for each step (except the last) */
+.start-here-step-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: calc(50px / 2); /* Align with the line's center */
+    bottom: calc(var(--space-lg) * -0.5); /* Position halfway through the margin-bottom */
+    transform: translateX(-50%) translateY(50%) rotate(45deg); /* Center and rotate for triangle shape */
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid var(--color-border);
+    border-right: 2px solid var(--color-border);
+    background: var(--color-bg); /* Match background to cover the line beneath the arrow */
+    z-index: 2;
+}
+
+.start-here-next-steps {
+    margin-top: var(--space-xl);
+}
+
+.start-here-next-steps h2 { /* Changed from h3 to h2 to match instruction */
+    margin-bottom: var(--space-lg);
+}
+
+.start-here-btn-group {
+    justify-content: center; /* Center buttons within the flex container */
+}
+
+/* No specific media query adjustments are needed for this section
+   as the existing utility classes and flexible layout handle responsiveness. */</style></head>
+<body style="">
+  <nav id="main-nav" style="">
+    <div class="nav-inner">
+      <a class="nav-logo" href="./index.html" data-editable="">Colleen Jorgensen, D.O.<span>Osteopath &amp; Pain Care Educator</span></a>
+      <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./work-with-me.html">Work With Me</a></li>
+        <li><a href="./dare.html">DARE to Heal</a></li>
+        <li><a href="./training.html">Trainings</a></li>
+        <li><a href="./speaking.html">Speaking</a></li>
+        <li><a href="./resources.html">Free Resources</a></li>
+        <li><a href="./contact.html" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+    <script>
+      (function(){
+        const nav=document.currentScript.closest('nav');
+        nav.addEventListener('click',function(e){
+          if(e.target.closest('.hamburger')){
+            const btn=nav.querySelector('.hamburger');
+            const links=nav.querySelector('.nav-links');
+            const expanded=btn.getAttribute('aria-expanded')==='true';
+            btn.setAttribute('aria-expanded',String(!expanded));
+            links.classList.toggle('open');
+          }
+        });
+      })();
+    </script>
+  </nav>
+
+  <section class="hero" data-zone="hero" data-zone-label="Hero" id="hero" style="position: relative;">
+    <div class="container" style="max-width:660px;">
+      <span class="section-label" data-editable="">Free Resources</span>
+      <h1 data-editable="">Start here. No cost, no commitment required.</h1>
+      <p class="lead" data-editable="">A collection of free tools, guides, and learning to help you begin building a different relationship with your pain, your body, and your nervous system.</p>
+    </div>
+  </section>
+
+  <section class="section" data-zone="featured-bundle" data-zone-label="Featured Free Bundle" id="featured-bundle" style="position: relative;">
+    <div class="container">
+      <div class="grid-2 bundle-featured-grid">
+        <div>
+          <span class="section-label" data-editable="">Free Download</span>
+          <h2 data-editable="">Pain Care Starter Bundle</h2>
+          <p data-editable="">A curated set of free tools to help you begin understanding your pain, calming your nervous system, and moving with more ease.&nbsp; Like the art of repairing something with gold, the process of healing doesn’t erase what’s been experienced—it becomes part of how we move forward.<br><br>&nbsp;This bundle includes:</p>
+          <ul class="check-list" style="margin:var(--space-md) 0;">
+            <li data-editable="">A short video introduction to pain neuroscience</li>
+            <li data-editable="">Two audio-guided nervous system reset practices</li>
+            <li data-editable="">A PDF guide: “5 Things to Know About Your Pain”</li>
+            <li data-editable="">A pain care e-book</li>
+          </ul>
+          <a href="./contact.html" class="btn btn-primary" data-editable="">Get the Free Bundle</a>
+        </div>
+        <div class="bundle-visual-block">
+            <div class="bundle-image-area" style="position: relative;">
+                <img src="./assets/free_bundle.png" data-editable-image="" alt="Free pain care resources" style="cursor: pointer;">
+            </div>
+            <div class="bundle-quote-area">
+                <blockquote class="bundle-quote" data-editable="">
+                    <p>"The world breaks everyone,<br>then some become strong<br>at the broken places."</p>
+                    <cite>Ernest Hemingway</cite>
+                </blockquote>
+            </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+  <section class="section section-alt" data-zone="learning-themes" data-zone-label="Learning Themes" id="learning-themes" style="position: relative;">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-label" data-editable="">Bite-Sized Learning</span>
+        <h2 data-editable="">Explore a topic</h2>
+        <p style="margin:0 auto;" data-editable="">Short, practical ideas you can absorb and apply right away.</p>
+      </div>
+      <div class="learning-themes-grid">
+        <div class="card card-alt"><div class="card-icon">🪨</div><h4 data-editable="">Pain Care Nuggets</h4><p data-editable="">Short, clear insights on how pain works and what you can do about it — grounded in current science and everyday experience.</p><a href="#" class="card-link" data-editable="">Browse →</a></div>
+        <div class="card card-alt"><div class="card-icon">⚡</div><h4 data-editable="">Neruo Nibbles</h4><p data-editable="">Quick practices and ideas for calming your nervous system, building a sense of safety, and increasing your window of tolerance.</p><a href="#" class="card-link" data-editable="">Explore →</a></div>
+        <div class="card card-alt"><div class="card-icon">🌞</div><h4 data-editable="">Mindfulness Morsels</h4><p data-editable="">Practices for developing a gentler, more curious relationship with your sensations — without suppression or over-analysis.</p><a href="#" class="card-link" data-editable="">Try one →</a></div>
+        <div class="card card-alt"><div class="card-icon">🏃</div><h4 data-editable="">Movement Snacks</h4><p data-editable="">Short, accessible movement invitations for people who want to reconnect with their bodies without overwhelming their nervous systems.</p><a href="#" class="card-link" data-editable="">Watch →</a></div>
+        <div class="card card-alt"><div class="card-icon">🤲</div><h4 data-editable="">Self Care Taster</h4><p data-editable="">Simple, effective techniques for soothing your body and mind through gentle touch and mindful presence.</p><a href="#" class="card-link" data-editable="">Discover →</a></div>
+        <div class="card card-alt"><div class="card-icon">💡</div><h4 data-editable="">Fascial Sips</h4><p data-editable="">Practical advice and clever shortcuts to make your daily routine smoother and more effective, enhancing your overall well-being.</p><a href="#" class="card-link" data-editable="">Learn more →</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" data-zone="start-here" data-zone-label="Start Here Path" id="start-here" style="position: relative;">
+    <div class="container">
+        <div class="start-here-content-wrapper">
+            <span class="section-label" data-editable="">New Here?</span>
+            <h2 data-editable="">A simple path to start</h2>
+            <p data-editable="">If you are new to this work and not sure where to begin, here is a three-step starting point.</p>
+
+            <div class="start-here-steps-wrapper">
+                <div class="start-here-step-item">
+                    <div class="num-circle num-circle-teal">1</div>
+                    <div>
+                        <h3 data-editable=""><b>Download the Starter Bundle</b></h3>
+                        <p data-editable="">Start with the free Pain Care Starter Bundle to get a clear overview of how pain works and what is possible.</p>
+                    </div>
+                </div>
+
+                <div class="start-here-step-item">
+                    <div class="num-circle num-circle-teal">2</div>
+                    <div>
+                        <h3 data-editable=""><b>Try one or two of the Free Bite-Sized Learning topics&nbsp;</b></h3>
+                        <p data-editable="">Choose one short movement practice and notice what you feel during and after. There is no expectation — just curiosity.</p>
+                    </div>
+                </div>
+
+                <div class="start-here-step-item">
+                    <div class="num-circle num-circle-teal">3</div>
+                    <div>
+                        <h3 data-editable=""><b>Consider what is next for you</b></h3>
+                        <p data-editable="">When you are ready, see whether 1:1 support, DARE to Heal online pain care program or the à la carte online courses are right for you.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="start-here-next-steps text-center">
+                <h2 data-editable="">Take the Next step</h2>
+                <div class="btn-group start-here-btn-group">
+                    <a href="#" class="btn btn-primary" data-editable="">DARE to Heal</a>
+                    <a href="#" class="btn btn-outline" data-editable="">Online Courses</a>
+                    <a href="#" class="btn btn-outline" data-editable="">Work 1:1 with Colleen</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <section class="section section-alt" data-zone="email-signup" data-zone-label="Email Signup" id="email-signup" style="position: relative;">
+    <div class="container" style="max-width:560px;text-align:center;">
+      <span class="section-label" data-editable="">Stay Connected</span>
+      <h2 data-editable="">Get occasional updates from Colleen</h2>
+      <p data-editable="">No noise, no pressure. Just thoughtful resources, new offerings, and insights shared when they are actually worth sharing.</p>
+      <a href="./contact.html" class="btn btn-outline" data-editable="">Send a note to subscribe</a>
+    </div>
+  </section>
+
+  
+
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <strong data-editable="">Colleen Jorgensen, D.O.</strong>
+        <p data-editable="">Osteopath · Movement Specialist · Pain Care Educator</p>
+        <p data-editable="">Montreal, Canada</p>
+        <div class="social-links">
+          <a href="#" data-editable="">Instagram</a>
+          <a href="#" data-editable="">YouTube</a>
+          <a href="#" data-editable="">Facebook</a>
+        </div>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./work-with-me.html">Work With Me</a>
+        <a href="./dare.html">D.A.R.E. to Heal</a>
+        <a href="./training.html">Trainings</a>
+        <a href="./speaking.html">Speaking</a>
+        <a href="./resources.html">Free Resources</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+      <div class="footer-contact">
+        <p style="color:rgba(255,255,255,.5);font-size:.85rem;margin-bottom:.5rem;" data-editable="">Questions? Reach out.</p>
+        <a href="mailto:coljorgensen13@gmail.com" data-editable="">coljorgensen13@gmail.com</a>
+        <p style="color:rgba(255,255,255,.4);font-size:.82rem;margin-top:.5rem;" data-editable="">Montreal, Canada</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p data-editable="">© 2025 Colleen Jorgensen, D.O. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+</body></html>
