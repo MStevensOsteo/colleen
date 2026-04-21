@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Colleen Jorgensen, D.O.</title>
+  <meta name="description" content="Learn about Colleen Jorgensen, D.O. — her background, philosophy, and integrated approach to osteopathy, pain education, and movement.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Milonga:wght@400&amp;display=swap"><style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap');
+    :root{--color-primary:#5C4033;--color-secondary:#8B6F5E;--color-accent:#C17F5A;--color-bg:#FAF7F2;--color-bg-alt:#F2EDE4;--color-text:#2A1F1A;--color-text-muted:#7A6155;--font-heading:'Cormorant Garamond',Georgia,serif;--font-body:'DM Sans',system-ui,sans-serif;--space-xs:.5rem;--space-sm:1rem;--space-md:1.5rem;--space-lg:2.5rem;--space-xl:4rem;--container-width:1100px;--radius:12px;--shadow:0 4px 24px rgba(42,31,26,0.08);--color-accent-soft:#E4C7A8;--color-blush:#D4937A;--color-border:#DDD0C0;  --font-dare: 'Milonga', system-ui, sans-serif;
+}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{font-size:16px;scroll-behavior:smooth;}
+    body{font-family:var(--font-body);font-weight:300;background:var(--color-bg);color:var(--color-text);line-height:1.7;-webkit-font-smoothing:antialiased;}
+    img{max-width:100%;height:auto;display:block;}
+    a{color:inherit;text-decoration:none;}
+    ul{list-style:none;}
+    .container{width:100%;max-width:var(--container-width);margin:0 auto;padding:0 var(--space-md);}
+    h1,h2,h3,h4,h5{font-family:var(--font-heading);line-height:1.2;color:var(--color-primary);}
+    h1{font-size:clamp(2rem,5vw,3.2rem);font-weight:300;}
+    h2{font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:300;}
+    h3{font-size:clamp(1.15rem,2vw,1.5rem);font-weight:400;}
+    h4{font-size:1.05rem;font-weight:400;}
+    p{margin-bottom:var(--space-sm);}
+    p:last-child{margin-bottom:0;}
+    .section-label{font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--color-accent);margin-bottom:var(--space-xs);display:block;}
+    .btn{display:inline-block;padding:.8rem 1.8rem;border-radius:50px;font-family:var(--font-body);font-size:.95rem;font-weight:500;cursor:pointer;transition:all .2s ease;border:2px solid transparent;text-align:center;}
+    .btn-primary{background:var(--color-accent);color:#fff;border-color:var(--color-accent);}
+    .btn-primary:hover{background:var(--color-primary);border-color:var(--color-primary);}
+    .btn-outline{background:transparent;color:var(--color-accent);border-color:var(--color-accent);}
+    .btn-outline:hover{background:var(--color-accent);color:#fff;}
+    .btn-secondary{background:var(--color-secondary);color:#fff;border-color:var(--color-secondary);}
+    .btn-secondary:hover{background:#627058;border-color:#627058;}
+    .btn-white{background:#fff;color:var(--color-accent);border-color:#fff;}
+    .btn-white:hover{background:var(--color-bg-alt);}
+    #main-nav{position:sticky;top:0;z-index:1000;background:var(--color-bg);border-bottom:1px solid var(--color-border);box-shadow:0 2px 12px rgba(42,31,26,.06);}
+    .nav-inner{max-width:var(--container-width);margin:0 auto;padding:0 var(--space-md);display:flex;align-items:center;justify-content:space-between;height:70px;}
+    .nav-logo{font-family:var(--font-heading);font-size:1.05rem;font-weight:500;color:var(--color-text);white-space:nowrap;line-height:1.2;}
+    .nav-logo span{display: block;font-family: var(--font-body);font-size: 0.68rem;font-weight: 400;letter-spacing: 0.10em;text-transform: uppercase;color: var(--color-text-muted);}
+    .nav-links{display:flex;align-items:center;gap:1.1rem;}
+    .nav-links a{font-size:.85rem;font-weight:500;color:var(--color-text-muted);transition:color .2s;white-space:nowrap;}
+    .nav-links a:hover,.nav-links a.active{color:var(--color-primary);}
+    .nav-links .nav-cta{background:var(--color-accent);color:#fff !important;padding:.45rem 1.1rem;border-radius:50px;}
+    .nav-links .nav-cta:hover{background:var(--color-primary) !important;}
+    .hamburger{display:none;flex-direction:column;justify-content:space-around;width:28px;height:22px;background:none;border:none;cursor:pointer;padding:0;z-index:9001;flex-shrink:0;}
+    .hamburger span{display:block;width:100%;height:2px;background:var(--color-text);border-radius:2px;transition:all .3s ease;}
+    @media(max-width:960px){
+      .hamburger{display:flex;}
+      .nav-links{display:none;position:fixed;top:70px;left:0;right:0;background:var(--color-bg);flex-direction:column;align-items:flex-start;gap:0;padding:var(--space-xs) 0;border-bottom:2px solid var(--color-border);box-shadow:0 8px 24px rgba(42,31,26,.1);z-index:9000;overflow-y:auto;max-height:calc(100vh - 70px);}
+      .nav-links.open{display:flex;}
+      .nav-links li{width:100%;}
+      .nav-links a{display:block;padding:.85rem var(--space-md);font-size:1rem;border-bottom:1px solid var(--color-border);}
+      .nav-links .nav-cta{margin:var(--space-sm) var(--space-md);display:inline-block;border-radius:50px;}
+    }
+    footer{background:#2E211A;color:rgba(255,255,255,.85);padding:var(--space-xl) 0 var(--space-md);}
+    .footer-inner{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:var(--space-lg);padding-bottom:var(--space-lg);border-bottom:1px solid rgba(255,255,255,.08);}
+    .footer-brand strong{font-family:var(--font-heading);font-size:1.05rem;font-weight:400;color:#fff;display:block;margin-bottom:var(--space-xs);}
+    .footer-brand p{color:rgba(255,255,255,.55);font-size:.85rem;margin-bottom:.25rem;}
+    .footer-nav{display:flex;flex-direction:column;gap:.5rem;}
+    .footer-nav a{color:rgba(255,255,255,.6);font-size:.85rem;transition:color .2s;}
+    .footer-nav a:hover{color:var(--color-accent);}
+    .footer-contact a{color:rgba(255,255,255,.6);font-size:.875rem;display:block;margin-bottom:.5rem;transition:color .2s;}
+    .footer-contact a:hover{color:var(--color-accent);}
+    .social-links{display:flex;gap:1rem;margin-top:var(--space-sm);flex-wrap:wrap;}
+    .social-links a{color:rgba(255,255,255,.6);font-size:.85rem;transition:color .2s;}
+    .social-links a:hover{color:var(--color-accent);}
+    .footer-bottom{text-align:center;padding-top:var(--space-md);}
+    .footer-bottom p{color:rgba(255,255,255,.3);font-size:.78rem;margin:0;}
+    @media(max-width:700px){.footer-inner{grid-template-columns:1fr;gap:var(--space-md);}}
+    .section{padding:var(--space-xl) 0;}
+    .section-alt{background:var(--color-bg-alt);}
+    .section-dark{background:#2E211A;}
+    .section-dark h2,.section-dark h3,.section-dark h4{color:#fff;}
+    .section-dark p,.section-dark li{color:rgba(255,255,255,.72);}
+    .section-dark .section-label{color:var(--color-accent);}
+    .section-primary{background:var(--color-primary);}
+    .section-primary h2,.section-primary h3,.section-primary p{color:#fff;}
+    .section-primary .section-label{color:var(--color-accent-soft);}
+    .section-header{margin-bottom:var(--space-lg);}
+    .section-header p{color:var(--color-text-muted);max-width:600px;}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-lg);}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-md);}
+    .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-md);}
+    @media(max-width:900px){.grid-3,.grid-4{grid-template-columns:1fr 1fr;}}
+    @media(max-width:600px){.grid-2,.grid-3,.grid-4{grid-template-columns:1fr;}}
+    .card{background:var(--color-bg);border-radius:var(--radius);padding:var(--space-md);box-shadow:var(--shadow);}
+    .card-alt{background:var(--color-bg-alt);box-shadow:none;border:1px solid var(--color-border);}
+    .card h3,.card h4{margin-bottom:var(--space-xs);}
+    .card p{color:var(--color-text-muted);font-size:.93rem;}
+    .card-icon{width:48px;height:48px;border-radius:12px;background:var(--color-accent-soft);display:flex;align-items:center;justify-content:center;margin-bottom:var(--space-sm);font-size:1.4rem;}
+    .card-link{display:inline-block;margin-top:var(--space-sm);font-size:.88rem;font-weight:600;color:var(--color-accent);}
+    .card-link:hover{text-decoration:underline;}
+    .testimonial{background:var(--color-bg);border-left:4px solid var(--color-accent);padding:var(--space-md);border-radius:0 var(--radius) var(--radius) 0;}
+    .testimonial blockquote{font-style:italic;font-size:.97rem;line-height:1.75;color:var(--color-text);margin-bottom:var(--space-xs);}
+    .testimonial cite{font-size:.82rem;font-weight:600;color:var(--color-text-muted);font-style:normal;}
+    .cta-section{background:var(--color-bg-alt);padding:var(--space-xl) 0;text-align:center;}
+    .cta-section h2{margin-bottom:var(--space-sm);}
+    .cta-section p{color:var(--color-text-muted);max-width:540px;margin:0 auto var(--space-lg);}
+    .text-center{text-align:center;}
+    .text-muted{color:var(--color-text-muted);}
+    .highlight{color:var(--color-accent);}
+    .divider{border:none;border-top:1px solid var(--color-border);margin:var(--space-lg) 0;}
+    .pill{display:inline-block;background:rgba(228,199,168,.5);color:var(--color-accent);padding:.28rem .8rem;border-radius:50px;font-size:.77rem;font-weight:600;}
+    .pill-teal{background:rgba(212,147,122,.2);color:var(--color-blush);}
+    .stat-box{text-align:center;padding:var(--space-md);}
+    .stat-number{font-family:var(--font-heading);font-size:2.8rem;font-weight:300;color:var(--color-accent);line-height:1;display:block;}
+    .stat-label{font-size:.88rem;color:var(--color-text-muted);margin-top:.25rem;display:block;}
+    .timeline{position:relative;padding-left:2rem;}
+    .timeline::before{content:'';position:absolute;left:.5rem;top:0;bottom:0;width:2px;background:var(--color-border);}
+    .timeline-item{position:relative;margin-bottom:var(--space-md);}
+    .timeline-item::before{content:'';position:absolute;left:-1.6rem;top:.48rem;width:12px;height:12px;border-radius:50%;background:var(--color-accent);}
+    .timeline-item h4{margin-bottom:.25rem;}
+    .timeline-item p{font-size:.9rem;color:var(--color-text-muted);}
+    .faq-item{border-bottom:1px solid var(--color-border);padding:var(--space-sm) 0;}
+    .faq-q{font-weight:600;font-size:1rem;margin-bottom:.4rem;color:var(--color-text);}
+    .faq-a{color:var(--color-text-muted);font-size:.93rem;}
+    .pathway-card{background:var(--color-bg);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s;}
+    .pathway-card:hover{transform:translateY(-4px);box-shadow:0 8px 32px rgba(42,31,26,.12);}
+    .pathway-card-img{height:190px;overflow:hidden;background:var(--color-bg-alt);}
+    .pathway-card-img img{width:100%;height:100%;object-fit:cover;}
+    .pathway-card-body{padding:var(--space-md);}
+    .pathway-card-body h3{margin-bottom:var(--space-xs);}
+    .pathway-card-body p{font-size:.93rem;color:var(--color-text-muted);margin-bottom:var(--space-sm);}
+    .btn-group{display:flex;gap:var(--space-sm);flex-wrap:wrap;}
+    .hero{padding:var(--space-xl) 0;background:var(--color-bg-alt);}
+    .hero h1{margin-bottom:var(--space-sm);}
+    .hero .lead{font-size:1.1rem;color:var(--color-text-muted);margin-bottom:var(--space-lg);max-width:580px;}
+    .hero-two-col{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-xl);align-items:center;}
+    @media(max-width:768px){.hero-two-col{grid-template-columns:1fr;}}
+    .check-list{display:flex;flex-direction:column;gap:.65rem;}
+    .check-list li{display:flex;align-items:flex-start;gap:.6rem;font-size:.93rem;color:var(--color-text-muted);}
+    .check-list li::before{content:'\2713';color:var(--color-primary);font-weight:700;flex-shrink:0;}
+    .num-circle{background:var(--color-primary);color:#fff;font-family:var(--font-heading);font-size:1.3rem;font-weight:700;width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+    .num-circle-teal{background:var(--color-blush);}
+    @media print{#main-nav,footer{display:none;}}
+  </style>
+  
+  
+<style id="__gitqi-section-story-styles">#story {
+    position: relative; /* Moved from inline style */
+}
+
+.story-container {
+    max-width: 800px; /* Moved from inline style */
+}
+
+#story h2 {
+    /* Double the space between the heading and the paragraph text */
+    /* Assuming the standard paragraph margin (var(--space-sm)) as a base for spacing */
+    margin-bottom: calc(2 * var(--space-sm)); 
+}
+
+#story p {
+    /* Change the font colour to the dark brown */
+    color: var(--color-primary);
+}</style><style id="__gitqi-section-credentials-styles">.timeline {
+  padding-left: var(--space-lg); /* Increased from 2rem (32px) to 2.5rem (40px) to move text further right and ensure separation */
+}
+
+.timeline-item::before {
+  /* Calculation for left position:
+     1. Desired line center (relative to timeline start): var(--space-xs) + 1px (0.5rem + 1px = 8px + 1px = 9px)
+     2. Desired dot left edge (relative to timeline start, to be centered on line): Line center - (dot width / 2) = 9px - 6px = 3px
+     3. The timeline-item content starts at `padding-left` of the `.timeline` element, which is var(--space-lg) = 2.5rem = 40px.
+     4. Therefore, the dot's `left` property (relative to its `timeline-item` parent) should be:
+        (Dot left edge relative to timeline start) - (timeline-item start relative to timeline start)
+        = 3px - 40px = -37px.
+     5. -37px converted to rem (assuming 16px base font size): -37 / 16 = -2.3125rem.
+  */
+  left: calc(var(--space-xs) - 5px - var(--space-lg));
+}</style></head>
+<body style="">
+  <nav id="main-nav" style="">
+    <div class="nav-inner">
+      <a class="nav-logo" href="./index.html" data-editable="">Colleen Jorgensen, D.O.<span>Osteopath &amp; Pain Care Educator</span></a>
+      <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./work-with-me.html">Work With Me</a></li>
+        <li><a href="./dare.html">DARE to Heal</a></li>
+        <li><a href="./training.html">Trainings</a></li>
+        <li><a href="./speaking.html">Speaking</a></li>
+        <li><a href="./resources.html">Free Resources</a></li>
+        <li><a href="./contact.html" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+    <script>
+      (function(){
+        const nav=document.currentScript.closest('nav');
+        nav.addEventListener('click',function(e){
+          if(e.target.closest('.hamburger')){
+            const btn=nav.querySelector('.hamburger');
+            const links=nav.querySelector('.nav-links');
+            const expanded=btn.getAttribute('aria-expanded')==='true';
+            btn.setAttribute('aria-expanded',String(!expanded));
+            links.classList.toggle('open');
+          }
+        });
+      })();
+    </script>
+  </nav>
+
+  <section class="hero" data-zone="hero" data-zone-label="Hero" id="hero" style="position: relative;">
+    <div class="container">
+      <div class="hero-two-col">
+        <div>
+          <span class="section-label" data-editable="">About Colleen</span>
+          <h1 data-editable="">A career built on curiosity, care, and the belief that change is possible.</h1>
+          <p class="lead" data-editable="">Colleen Jorgensen is an osteopath, movement specialist, and pain care educator whose work spans more than 28 years of clinical practice, teaching, and ongoing learning.&nbsp;&nbsp;<br><br><span style="font-size: 17.6px;">Her work reflects a lifelong interest in how the body develops, adapts, and moves, from the earliest stages through to complex patterns in adulthood.<br><br>Colleen is the creator of the DARE to Heal&nbsp;online pain education program.</span></p>
+        </div>
+        <div style="border-radius: var(--radius); overflow: hidden; min-height: 400px; background: var(--color-bg); position: relative;">
+          <img src="./assets/Col_baby.jpg" data-editable-image="" alt="Portrait of Colleen Jorgensen, D.O." style="width: 100%; height: 100%; object-fit: cover; min-height: 400px; cursor: pointer;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" data-zone="story" data-zone-label="Colleen's Story" id="story">
+    <div class="container story-container">
+      <span class="section-label" data-editable="">Colleen's Story</span>
+      <h2 data-editable="">Lived experience.&nbsp; Clinical expertise.&nbsp; Whole person care.</h2>
+      <p data-editable=""></p><div>Colleen’s work has evolved through decades of exploring movement, the body, and the many ways people experience both wellness and pain. Beginning with a foundation in dance and athletic therapy, and expanding into osteopathy, pain care education, and teaching, her path has been shaped by curiosity, ongoing study, and a willingness to question and refine her approach.</div><div><br></div><div>Rather than focusing on fixing isolated issues, her work supports a broader process of change, helping people reconnect with their bodies and return to the things that matter most to them.</div><p></p>
+      <p data-editable="">What created the deepest shift, both in her own lived experience and her professional practice,&nbsp; was encountering pain neuroscience education: the growing body of research showing that pain is far more complex, and far more changeable,&nbsp; than most people have been taught. She began integrating pain education into both her clinical work and her teaching, and watched it transform not just how her clients recovered, but how they related to themselves.</p>
+      <p data-editable="">Today, Colleen works across multiple channels: in her private practice, through professional training programs, through her DARE to Heal online pain care education program,&nbsp; and as a speaker and podcast guest. <br><br>Her consistent goal across all of it is the same: to offer people more clarity, more agency, and more JOY than they arrived with.</p>
+    </div>
+  </section>
+
+  <section class="section section-alt" data-zone="credentials" data-zone-label="Credentials and Experience" id="credentials" style="position: relative;">
+    <div class="container">
+      <span class="section-label" data-editable="">Training &amp; Background</span>
+      <h2 data-editable="">Credentials &amp; Experience</h2>
+      <div class="grid-2" style="margin-top:var(--space-lg);">
+        <div class="timeline">
+          <div class="timeline-item">
+            <h4 data-editable="">Osteopathy D.O.&nbsp;</h4>
+            <p data-editable="">Colleen graduated from the Collège d'Études Ostéopathiques in 2005.&nbsp; One of most rigorous programs in the country, she now has&nbsp; decades of clinical experience.</p>
+          </div>
+          <div class="timeline-item">
+            <h4 data-editable="">Pain Care Education&nbsp;</h4>
+            <p data-editable="">Trained in pain neuroscience and pain care education:<br>Pain Care Aware Certification and Professional Pain Care with Neil Pearson &amp; Pain Care U<br>Pain Neuroscience Education at The Neuro Orthopaedic Institute&nbsp; Acceptance and Commitment Therapy and Functional Nutrition for Chronic Pain Certifications at the Integrative Pain Science Institute.<br>Colleen has been integrating pain care coaching both into clinical and group settings.</p>
+          </div>
+          <div class="timeline-item">
+            <h4 data-editable="">Therapeutic Pilates&nbsp;</h4>
+            <p data-editable="">Certified instructor with training in clinical and rehabilitative applications for people with pain and injury history.</p>
+          </div>
+          <div class="timeline-item">
+            <h4 data-editable="">Yoga &amp; Somatic Movement</h4>
+            <p data-editable="">Trained across multiple modalities, including rehabilitative Pilates, yoga, breathwork and somatics, all with a focus on nervous system awareness,&nbsp; and embodied presence.</p>
+          </div>
+          <div class="timeline-item">
+            <h4 data-editable="">Athletic Therapy</h4>
+            <p data-editable="">Where it all began.&nbsp; Colleen graduated from Concordia University in 1995.&nbsp;</p>
+          </div>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h4 data-editable="">Professional Education &amp; Training</h4>
+            <p data-editable="">Creator and facilitator of professional certificate programs for healthcare providers, yoga and Pilates teachers, and somatic practitioners.</p>
+          </div>
+          <div class="timeline-item">
+            <h4 data-editable="">Speaking &amp; Podcast Appearances</h4>
+            <p data-editable="">Invited speaker and guest on chronic pain, nervous system regulation, and pain communication for professional and public audiences.</p>
+          </div>
+          <div class="timeline-item">
+            <h4 data-editable="">Ongoing Learning</h4>
+            <p data-editable="">Active participant in continuing education across pain science, movement, embodiment, and person-centred care.</p>
+          </div>
+          <div class="timeline-item">
+            <h4 data-editable="">28+ Years in Practice</h4>
+            <p data-editable="">Montreal-based, with a practice, a community, and a commitment to advancing how pain is understood and treated with online participants from all over the world.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" data-zone="philosophy" data-zone-label="Philosophy and Approach" id="philosophy" style="position: relative;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-editable="">How Colleen Thinks About Healing</span>
+        <h2 data-editable="">A philosophy of curiosity over fear</h2>
+      </div>
+      <div class="grid-4">
+        <div class="card card-alt">
+          <div class="card-icon">🔍</div>
+          <h4 data-editable=""><b>Pain does not define you</b></h4>
+          <p data-editable="">Your symptoms are real — and so is your capacity to change your relationship to them. Pain is one part of the story, not the whole of it.</p>
+        </div>
+        <div class="card card-alt">
+          <div class="card-icon">🧠</div>
+          <h4 data-editable=""><b>Understanding is powerful medicine</b></h4>
+          <p data-editable="">When people genuinely understand what is happening in their nervous system, they often stop being afraid of their sensations — and that shift alone can change the trajectory of recovery.</p>
+        </div>
+        <div class="card card-alt">
+          <div class="card-icon">🤝</div>
+          <h4 data-editable=""><b>You are the expert on your experience</b></h4>
+          <p data-editable="">Colleen’s role is not to fix you. It is to offer tools, perspective, and presence — and to support you in developing your own insight and capacity.</p>
+        </div>
+        <div class="card card-alt">
+          <div class="card-icon">🌿</div>
+          <h4 data-editable=""><b>Movement is medicine — wisely approached</b></h4>
+          <p data-editable="">The nervous system, body, and breath are not separate systems. The movement that heals is the kind that listens to all of them.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" data-zone="why-this-work" data-zone-label="Why This Work Matters" id="why-this-work" style="position: relative;">
+    <div class="container" style="max-width:760px;text-align:center;">
+      <span class="section-label" data-editable="">Commitment to Change</span>
+      <h2 data-editable="">Why this work matters</h2>
+      <p data-editable="">Chronic pain is one of the most widespread and misunderstood experiences in human health. Too many people spend years feeling dismissed, confused, or hopeless — not because their pain is not real, but because they have never had the right kind of support or education.</p>
+      <p data-editable="">Colleen’s work is a direct response to that gap. She is committed to offering approaches that are evidence-informed, deeply human, and grounded in genuine respect for the complexity of what each person carries.</p>
+    </div>
+  </section>
+
+  <section class="cta-section" data-zone="about-cta" data-zone-label="Closing CTA" id="about-cta" style="position: relative;">
+    <div class="container">
+      <h2 data-editable="">Ready to take the next step?</h2>
+      <p data-editable="">Whether you are seeking support for yourself or looking to deepen your professional practice, Colleen would be glad to hear from you.</p>
+      <div class="btn-group" style="justify-content:center;">
+        <a href="./work-with-me.html" class="btn btn-primary" data-editable="">Work With Me</a>
+        <a href="./contact.html" class="btn btn-outline" data-editable="">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <strong data-editable="">Colleen Jorgensen, D.O.</strong>
+        <p data-editable="">Osteopath · Movement Specialist · Pain Care Educator</p>
+        <p data-editable="">Montreal, Canada</p>
+        <div class="social-links">
+          <a href="#" data-editable="">Instagram</a>
+          <a href="#" data-editable="">YouTube</a>
+          <a href="#" data-editable="">Facebook</a>
+        </div>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./work-with-me.html">Work With Me</a>
+        <a href="./dare.html">D.A.R.E. to Heal</a>
+        <a href="./training.html">Trainings</a>
+        <a href="./speaking.html">Speaking</a>
+        <a href="./resources.html">Free Resources</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+      <div class="footer-contact">
+        <p style="color:rgba(255,255,255,.5);font-size:.85rem;margin-bottom:.5rem;" data-editable="">Questions? Reach out.</p>
+        <a href="mailto:coljorgensen13@gmail.com" data-editable="">coljorgensen13@gmail.com</a>
+        <p style="color:rgba(255,255,255,.4);font-size:.82rem;margin-top:.5rem;" data-editable="">Montreal, Canada</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p data-editable="">© 2025 Colleen Jorgensen, D.O. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+</body></html>
