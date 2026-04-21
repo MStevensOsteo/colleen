@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D.A.R.E. to Heal — Colleen Jorgensen, D.O.</title>
+  <meta name="description" content="D.A.R.E. to Heal is an online pain care program helping people move from fear and confusion toward curiosity, confidence, and meaningful life.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Milonga:wght@400&amp;display=swap"><style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap');
+    :root{--color-primary:#5C4033;--color-secondary:#8B6F5E;--color-accent:#C17F5A;--color-bg:#FAF7F2;--color-bg-alt:#F2EDE4;--color-text:#2A1F1A;--color-text-muted:#7A6155;--font-heading:'Cormorant Garamond',Georgia,serif;--font-body:'DM Sans',system-ui,sans-serif;--space-xs:.5rem;--space-sm:1rem;--space-md:1.5rem;--space-lg:2.5rem;--space-xl:4rem;--container-width:1100px;--radius:12px;--shadow:0 4px 24px rgba(42,31,26,0.08);--color-accent-soft:#E4C7A8;--color-blush:#D4937A;--color-border:#DDD0C0;  --font-dare: 'Milonga', system-ui, sans-serif;
+}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{font-size:16px;scroll-behavior:smooth;}
+    body{font-family:var(--font-body);font-weight:300;background:var(--color-bg);color:var(--color-text);line-height:1.7;-webkit-font-smoothing:antialiased;}
+    img{max-width:100%;height:auto;display:block;}
+    a{color:inherit;text-decoration:none;}
+    ul{list-style:none;}
+    .container{width:100%;max-width:var(--container-width);margin:0 auto;padding:0 var(--space-md);}
+    h1,h2,h3,h4,h5{font-family:var(--font-heading);line-height:1.2;color:var(--color-primary);}
+    h1{font-size:clamp(2rem,5vw,3.2rem);font-weight:300;}
+    h2{font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:300;}
+    h3{font-size:clamp(1.15rem,2vw,1.5rem);font-weight:400;}
+    h4{font-size:1.05rem;font-weight:400;}
+    p{margin-bottom:var(--space-sm);}
+    p:last-child{margin-bottom:0;}
+    .section-label{font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--color-accent);margin-bottom:var(--space-xs);display:block;}
+    .btn{display:inline-block;padding:.8rem 1.8rem;border-radius:50px;font-family:var(--font-body);font-size:.95rem;font-weight:500;cursor:pointer;transition:all .2s ease;border:2px solid transparent;text-align:center;}
+    .btn-primary{background:var(--color-accent);color:#fff;border-color:var(--color-accent);}
+    .btn-primary:hover{background:var(--color-primary);border-color:var(--color-primary);}
+    .btn-outline{background:transparent;color:var(--color-accent);border-color:var(--color-accent);}
+    .btn-outline:hover{background:var(--color-accent);color:#fff;}
+    .btn-secondary{background:var(--color-secondary);color:#fff;border-color:var(--color-secondary);}
+    .btn-secondary:hover{background:#627058;border-color:#627058;}
+    .btn-white{background:#fff;color:var(--color-accent);border-color:#fff;}
+    .btn-white:hover{background:var(--color-bg-alt);}
+    #main-nav{position:sticky;top:0;z-index:1000;background:var(--color-bg);border-bottom:1px solid var(--color-border);box-shadow:0 2px 12px rgba(42,31,26,.06);}
+    .nav-inner{max-width:var(--container-width);margin:0 auto;padding:0 var(--space-md);display:flex;align-items:center;justify-content:space-between;height:70px;}
+    .nav-logo{font-family:var(--font-heading);font-size:1.05rem;font-weight:500;color:var(--color-text);white-space:nowrap;line-height:1.2;}
+    .nav-logo span{display: block;font-family: var(--font-body);font-size: 0.68rem;font-weight: 400;letter-spacing: 0.10em;text-transform: uppercase;color: var(--color-text-muted);}
+    .nav-links{display:flex;align-items:center;gap:1.1rem;}
+    .nav-links a{font-size:.85rem;font-weight:500;color:var(--color-text-muted);transition:color .2s;white-space:nowrap;}
+    .nav-links a:hover,.nav-links a.active{color:var(--color-primary);}
+    .nav-links .nav-cta{background:var(--color-accent);color:#fff !important;padding:.45rem 1.1rem;border-radius:50px;}
+    .nav-links .nav-cta:hover{background:var(--color-primary) !important;}
+    .hamburger{display:none;flex-direction:column;justify-content:space-around;width:28px;height:22px;background:none;border:none;cursor:pointer;padding:0;z-index:9001;flex-shrink:0;}
+    .hamburger span{display:block;width:100%;height:2px;background:var(--color-text);border-radius:2px;transition:all .3s ease;}
+    @media(max-width:960px){
+      .hamburger{display:flex;}
+      .nav-links{display:none;position:fixed;top:70px;left:0;right:0;background:var(--color-bg);flex-direction:column;align-items:flex-start;gap:0;padding:var(--space-xs) 0;border-bottom:2px solid var(--color-border);box-shadow:0 8px 24px rgba(42,31,26,.1);z-index:9000;overflow-y:auto;max-height:calc(100vh - 70px);}
+      .nav-links.open{display:flex;}
+      .nav-links li{width:100%;}
+      .nav-links a{display:block;padding:.85rem var(--space-md);font-size:1rem;border-bottom:1px solid var(--color-border);}
+      .nav-links .nav-cta{margin:var(--space-sm) var(--space-md);display:inline-block;border-radius:50px;}
+    }
+    footer{background:#2E211A;color:rgba(255,255,255,.85);padding:var(--space-xl) 0 var(--space-md);}
+    .footer-inner{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:var(--space-lg);padding-bottom:var(--space-lg);border-bottom:1px solid rgba(255,255,255,.08);}
+    .footer-brand strong{font-family:var(--font-heading);font-size:1.05rem;font-weight:400;color:#fff;display:block;margin-bottom:var(--space-xs);}
+    .footer-brand p{color:rgba(255,255,255,.55);font-size:.85rem;margin-bottom:.25rem;}
+    .footer-nav{display:flex;flex-direction:column;gap:.5rem;}
+    .footer-nav a{color:rgba(255,255,255,.6);font-size:.85rem;transition:color .2s;}
+    .footer-nav a:hover{color:var(--color-accent);}
+    .footer-contact a{color:rgba(255,255,255,.6);font-size:.875rem;display:block;margin-bottom:.5rem;transition:color .2s;}
+    .footer-contact a:hover{color:var(--color-accent);}
+    .social-links{display:flex;gap:1rem;margin-top:var(--space-sm);flex-wrap:wrap;}
+    .social-links a{color:rgba(255,255,255,.6);font-size:.85rem;transition:color .2s;}
+    .social-links a:hover{color:var(--color-accent);}
+    .footer-bottom{text-align:center;padding-top:var(--space-md);}
+    .footer-bottom p{color:rgba(255,255,255,.3);font-size:.78rem;margin:0;}
+    @media(max-width:700px){.footer-inner{grid-template-columns:1fr;gap:var(--space-md);}}
+    .section{padding:var(--space-xl) 0;}
+    .section-alt{background:var(--color-bg-alt);}
+    .section-dark{background:#2E211A;}
+    .section-dark h2,.section-dark h3,.section-dark h4{color:#fff;}
+    .section-dark p,.section-dark li{color:rgba(255,255,255,.72);}
+    .section-dark .section-label{color:var(--color-accent);}
+    .section-primary{background:var(--color-primary);}
+    .section-primary h2,.section-primary h3,.section-primary p{color:#fff;}
+    .section-primary .section-label{color:var(--color-accent-soft);}
+    .section-header{margin-bottom:var(--space-lg);}
+    .section-header p{color:var(--color-text-muted);max-width:600px;}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-lg);}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-md);}
+    .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-md);}
+    @media(max-width:900px){.grid-3,.grid-4{grid-template-columns:1fr 1fr;}}
+    @media(max-width:600px){.grid-2,.grid-3,.grid-4{grid-template-columns:1fr;}}
+    .card{background:var(--color-bg);border-radius:var(--radius);padding:var(--space-md);box-shadow:var(--shadow);}
+    .card-alt{background:var(--color-bg-alt);box-shadow:none;border:1px solid var(--color-border);}
+    .card h3,.card h4{margin-bottom:var(--space-xs);}
+    .card p{color:var(--color-text-muted);font-size:.93rem;}
+    .card-icon{width:48px;height:48px;border-radius:12px;background:var(--color-accent-soft);display:flex;align-items:center;justify-content:center;margin-bottom:var(--space-sm);font-size:1.4rem;}
+    .card-link{display:inline-block;margin-top:var(--space-sm);font-size:.88rem;font-weight:600;color:var(--color-accent);}
+    .card-link:hover{text-decoration:underline;}
+    .testimonial{background:var(--color-bg);border-left:4px solid var(--color-accent);padding:var(--space-md);border-radius:0 var(--radius) var(--radius) 0;}
+    .testimonial blockquote{font-style:italic;font-size:.97rem;line-height:1.75;color:var(--color-text);margin-bottom:var(--space-xs);}
+    .testimonial cite{font-size:.82rem;font-weight:600;color:var(--color-text-muted);font-style:normal;}
+    .cta-section{background:var(--color-bg-alt);padding:var(--space-xl) 0;text-align:center;}
+    .cta-section h2{margin-bottom:var(--space-sm);}
+    .cta-section p{color:var(--color-text-muted);max-width:540px;margin:0 auto var(--space-lg);}
+    .text-center{text-align:center;}
+    .text-muted{color:var(--color-text-muted);}
+    .highlight{color:var(--color-accent);}
+    .divider{border:none;border-top:1px solid var(--color-border);margin:var(--space-lg) 0;}
+    .pill{display:inline-block;background:rgba(228,199,168,.5);color:var(--color-accent);padding:.28rem .8rem;border-radius:50px;font-size:.77rem;font-weight:600;}
+    .pill-teal{background:rgba(212,147,122,.2);color:var(--color-blush);}
+    .stat-box{text-align:center;padding:var(--space-md);}
+    .stat-number{font-family:var(--font-heading);font-size:2.8rem;font-weight:300;color:var(--color-accent);line-height:1;display:block;}
+    .stat-label{font-size:.88rem;color:var(--color-text-muted);margin-top:.25rem;display:block;}
+    .timeline{position:relative;padding-left:2rem;}
+    .timeline::before{content:'';position:absolute;left:.5rem;top:0;bottom:0;width:2px;background:var(--color-border);}
+    .timeline-item{position:relative;margin-bottom:var(--space-md);}
+    .timeline-item::before{content:'';position:absolute;left:-1.6rem;top:.48rem;width:12px;height:12px;border-radius:50%;background:var(--color-accent);}
+    .timeline-item h4{margin-bottom:.25rem;}
+    .timeline-item p{font-size:.9rem;color:var(--color-text-muted);}
+    .faq-item{border-bottom:1px solid var(--color-border);padding:var(--space-sm) 0;}
+    .faq-q{font-weight:600;font-size:1rem;margin-bottom:.4rem;color:var(--color-text);}
+    .faq-a{color:var(--color-text-muted);font-size:.93rem;}
+    .pathway-card{background:var(--color-bg);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s;}
+    .pathway-card:hover{transform:translateY(-4px);box-shadow:0 8px 32px rgba(42,31,26,.12);}
+    .pathway-card-img{height:190px;overflow:hidden;background:var(--color-bg-alt);}
+    .pathway-card-img img{width:100%;height:100%;object-fit:cover;}
+    .pathway-card-body{padding:var(--space-md);}
+    .pathway-card-body h3{margin-bottom:var(--space-xs);}
+    .pathway-card-body p{font-size:.93rem;color:var(--color-text-muted);margin-bottom:var(--space-sm);}
+    .btn-group{display:flex;gap:var(--space-sm);flex-wrap:wrap;}
+    .hero{padding:var(--space-xl) 0;background:var(--color-bg-alt);}
+    .hero h1{margin-bottom:var(--space-sm);}
+    .hero .lead{font-size:1.1rem;color:var(--color-text-muted);margin-bottom:var(--space-lg);max-width:580px;}
+    .hero-two-col{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-xl);align-items:center;}
+    @media(max-width:768px){.hero-two-col{grid-template-columns:1fr;}}
+    .check-list{display:flex;flex-direction:column;gap:.65rem;}
+    .check-list li{display:flex;align-items:flex-start;gap:.6rem;font-size:.93rem;color:var(--color-text-muted);}
+    .check-list li::before{content:'\2713';color:var(--color-primary);font-weight:700;flex-shrink:0;}
+    .num-circle{background:var(--color-primary);color:#fff;font-family:var(--font-heading);font-size:1.3rem;font-weight:700;width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+    .num-circle-teal{background:var(--color-blush);}
+    @media print{#main-nav,footer{display:none;}}
+  </style>
+  
+  
+<style id="__gitqi-section-hero-styles">:root {
+  /* Section-specific variables for the DARE hero */
+  --color-dare-hero-bg: #2E5E5B;
+  --color-white: #fff;
+  --color-white-rgb: 255, 255, 255;
+}
+
+.hero-dare {
+  background: var(--color-dare-hero-bg);
+  position: relative;
+}
+
+.hero-dare .dare-logo-image {
+  max-width: min(100%, 580px);
+  height: auto;
+  /* This margin ensures the text below is much closer to the image,
+     decreasing the space by 60% compared to var(--space-xs) (0.5rem * 0.4 = 0.2rem). */
+  margin-bottom: calc(var(--space-xs) * 0.4);
+  border-radius: var(--radius);
+}
+
+.hero-dare .section-label {
+  color: var(--color-accent);
+}
+
+.hero-dare h1 {
+  color: var(--color-white);
+}
+
+.hero-dare .dare-subtitle {
+  font-family: var(--font-heading);
+  font-weight: 300;
+  color: var(--color-white);
+  font-size: clamp(1.15rem, 2vw, 1.5rem);
+  line-height: 1.3;
+  display: block;
+}
+
+.hero-dare .lead {
+  color: rgba(var(--color-white-rgb), .82);
+}
+
+.hero-dare .small-text {
+  color: rgba(var(--color-white-rgb), .42);
+  font-size: .85rem;
+  margin-top: var(--space-sm);
+}
+
+.btn-outline-white {
+  background: transparent;
+  color: var(--color-white);
+  border: 2px solid rgba(var(--color-white-rgb), .45);
+}
+
+.btn-outline-white:hover {
+  background: rgba(var(--color-white-rgb), .1);
+  border-color: var(--color-white);
+}</style><style id="__gitqi-section-dare-philosophy-styles">/* all CSS needed for this section, including media queries */
+[data-zone="dare-philosophy"] .pathway-card-body {
+  text-align: center;
+}</style><style id="__gitqi-section-five-things-styles">/* all CSS needed for this section, including media queries */
+.five-things-container {
+    max-width: 860px; /* Overrides default container max-width for this specific section */
+}
+
+.five-things-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    margin-top: var(--space-lg);
+}
+
+.five-things-item {
+    display: flex;
+    gap: var(--space-md);
+    align-items: flex-start;
+}
+
+/* Reformatting: Make the headings bigger */
+.five-things-item h4 {
+    font-size: clamp(1.2rem, 2.5vw, 1.7rem); /* Increased font size for h4 headings */
+    margin-bottom: var(--space-xs); /* Added margin below h4 for better spacing */
+}</style></head>
+<body style="">
+  <nav id="main-nav" style="">
+    <div class="nav-inner">
+      <a class="nav-logo" href="./index.html" data-editable="">Colleen Jorgensen, D.O.<span>Osteopath &amp; Pain Care Educator</span></a>
+      <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./work-with-me.html">Work With Me</a></li>
+        <li><a href="./dare.html">DARE to Heal</a></li>
+        <li><a href="./training.html">Trainings</a></li>
+        <li><a href="./speaking.html">Speaking</a></li>
+        <li><a href="./resources.html">Free Resources</a></li>
+        <li><a href="./contact.html" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+    <script>
+      (function(){
+        const nav=document.currentScript.closest('nav');
+        nav.addEventListener('click',function(e){
+          if(e.target.closest('.hamburger')){
+            const btn=nav.querySelector('.hamburger');
+            const links=nav.querySelector('.nav-links');
+            const expanded=btn.getAttribute('aria-expanded')==='true';
+            btn.setAttribute('aria-expanded',String(!expanded));
+            links.classList.toggle('open');
+          }
+        });
+      })();
+    </script>
+  </nav>
+
+  <section class="hero hero-dare" data-zone="hero" data-zone-label="Hero" id="hero">
+    <div class="container" style="position: relative;">
+          <!-- The logo image is placed directly within the container -->
+          <img class="dare-logo-image" src="./assets/DARE logo.png" alt="Online Pain Care Program Image" data-editable-image="" style="cursor: pointer;">
+          <span class="section-label" data-editable="">Online Pain Care Program</span>
+          <h1 data-editable="">
+            <span class="dare-subtitle"><em></em><br></span>
+          </h1>
+          <p class="lead" data-editable="">A structured, compassionate 12 week online pain care&nbsp; program that helps people living with chronic pain move from fear and confusion toward curiosity, confidence, and meaningful participation in their lives.</p>
+          <div class="btn-group">
+            <a href="./contact.html" class="btn btn-white" data-editable="">Join the Waitlist</a>
+            <a href="#dare-receives" class="btn btn-outline-white" data-editable="">Learn More</a>
+          </div>
+          <p class="small-text" data-editable="">Next cohort: date to be announced. Add your name to the waitlist to be notified first.</p>
+    </div>
+</section>
+
+  <section class="section" data-zone="dare-who" data-zone-label="Who It's For" id="dare-who" style="position: relative;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-editable="">Is This for You?</span>
+        <h2 data-editable="">DARE to Heal is designed for people who…</h2>
+      </div>
+      <div class="grid-2">
+        <ul class="check-list">
+          <li data-editable="">Have been living with pain for months or years and feel stuck</li>
+          <li data-editable="">Have tried many treatments but have not found lasting relief</li>
+          <li data-editable="">Feel afraid of their symptoms or of moving their body</li>
+          <li data-editable="">Want to understand the “why” behind their pain, not just manage it</li>
+        </ul>
+        <ul class="check-list">
+          <li data-editable="">Are ready to take an active role in their recovery</li>
+          <li data-editable="">Feel worn down by a system that has not had answers</li>
+          <li data-editable="">Want a structured, supportive path that does not require perfection</li>
+          <li data-editable="">Are curious about the nervous system, movement, and embodied healing</li>
+        </ul>
+      </div>
+    </div>
+  </section><section class="section" data-zone="dare-philosophy" data-zone-label="DARE Philosophy" id="dare-philosophy" style="position: relative;">
+  <div class="container">
+    <div class="section-header text-center">
+      <span class="section-label" data-editable="">Our Approach to Healing</span>
+      <h2 data-editable="">The DARE Program Philosophy</h2>
+      <p data-editable="">The D.A.R.E. program is built upon four core principles, designed to guide you through a transformative journey in understanding and managing chronic pain. Each letter represents a vital step towards reclaiming your life.</p>
+    </div>
+
+    <div class="grid-2">
+      <div class="pathway-card">
+        <div class="pathway-card-img" style="position: relative;">
+          <img src="./assets/D_long.png" alt="Illustration of discovery or learning" data-editable-image="" style="cursor: pointer;">
+        </div>
+        <div class="pathway-card-body">
+          <h3 data-editable="">Discover &amp; Dialogue</h3>
+          <p data-editable="">Change begins by entering into dialogue with your body. Through curiosity and attention, you begin to notice patterns and connections that might otherwise go unseen.<br><br>As these discoveries take shape, they offer direction—helping you understand what your system needs and how to move forward with greater clarity and intention.</p>
+        </div>
+      </div>
+
+      <div class="pathway-card">
+        <div class="pathway-card-img" style="position: relative;">
+          <img src="./assets/A_long.png" alt="Illustration of acceptance or calm" data-editable-image="" style="cursor: pointer;">
+        </div>
+        <div class="pathway-card-body">
+          <h3 data-editable="">Accept &amp; Allow</h3>
+          <p data-editable="">Change begins with awareness. Rather than getting pulled into fear, judgment, or future prediction, this step is about noticing what is present and allowing it to be there without resistance.<br><br>From this place, you begin to see more clearly—what you’re feeling, what’s driving it, and what your system may need. This creates the conditions for more specific, effective, and compassionate responses.</p>
+        </div>
+      </div>
+
+      <div class="pathway-card">
+        <div class="pathway-card-img" style="position: relative;">
+          <img src="./assets/R_long.png" alt="Illustration of reframing or new perspective" data-editable-image="" style="cursor: pointer;">
+        </div>
+        <div class="pathway-card-body">
+          <h3 data-editable="">Respond &amp; Regulte</h3>
+          <p data-editable="">With awareness comes the opportunity to respond differently. This step focuses on using practical tools—such as breath, softening, and attention—to support regulation, even when pain is present.<br><br>As you build this capacity, you are less driven by reactivity and more able to make steady, intentional choices that support change.</p>
+        </div>
+      </div>
+
+      <div class="pathway-card">
+        <div class="pathway-card-img" style="position: relative;">
+          <img src="./assets/E_long.png" alt="Illustration of engagement or participation" data-editable-image="" style="cursor: pointer;">
+        </div>
+        <div class="pathway-card-body">
+          <h3 data-editable="">Explore &amp; Expand</h3>
+          <p data-editable="">Where is all comes together: With greater awareness and the ability to respond with regulation, you can begin to explore what feels possible through small, supported changes. This step is about experimenting—adjusting movement, attention, or pace—to see how your body responds.<br><br>Rather than pushing or avoiding, you work within a range that feels manageable and supported, identifying and exploring the those edges.&nbsp; Over time, these small experiments help expand your capacity, building confidence, resilience, and a more flexible relationship with your body.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="section section-alt" data-zone="dare-difference" data-zone-label="What Makes It Different" id="dare-difference" style="position: relative;">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-label" data-editable="">The D.A.R.E. Difference</span>
+        <h2 data-editable="">This is not another symptom-management program.</h2>
+        <p style="margin:0 auto;" data-editable="">DARE to Heal works at the level of understanding, nervous system awareness, and meaning — because that is where lasting change begins.</p>
+      </div>
+      <div class="grid-4" style="margin-top:var(--space-lg);">
+        <div class="card card-alt">
+          <div class="card-icon">🪨</div>
+          <h4 data-editable="">Whole-Person Approach</h4>
+          <p data-editable="">Pain is not just in your body. It involves your nervous system, your history, and your context. This program addresses all of it.</p>
+        </div>
+        <div class="card card-alt">
+          <div class="card-icon">📚</div>
+          <h4 data-editable="">Education + Practice</h4>
+          <p data-editable="">Clear pain science explanations alongside practical tools you can apply to your body and daily life right away.</p>
+        </div>
+        <div class="card card-alt">
+          <div class="card-icon">🤝</div>
+          <h4 data-editable="">Community &amp; Support</h4>
+          <p data-editable="">Cohort-based learning means you move through the material alongside others who understand what you carry. You are not doing this alone.</p>
+        </div>
+        <div class="card card-alt">
+          <div class="card-icon">💡</div>
+          <h4 data-editable="">Hopeful &amp; Practical</h4>
+          <p data-editable="">DARE is grounded, not abstract. Every module connects science to lived experience so you leave with insight and genuine confidence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" data-zone="five-things" data-zone-label="5 Things to Know About Pain" id="five-things" style="position: relative;">
+    <div class="container five-things-container">
+      <span class="section-label" data-editable="">Pain Reframed</span>
+      <h2 data-editable="">5 things about pain that could change everything</h2>
+      <div class="five-things-list">
+        <div class="five-things-item">
+          <div class="num-circle">1</div>
+          <div><h4 data-editable=""><span style="font-size: 1.25em;" data-gitqi-style=""><span style="font-size: 0.75em;" data-gitqi-style="">Pain is real - always.</span></span></h4><p data-editable="">Pain is produced by the nervous system as a protective signal. It is never “made up” and never “just in your head.” Your experience is valid and it is real.</p></div>
+        </div>
+        <div class="five-things-item">
+          <div class="num-circle">2</div>
+          <div><h4 data-editable="">Pain can change.</h4><p data-editable="">The nervous system is adaptable. Chronic pain is not a permanent sentence. With the right education, tools, and support, meaningful change is possible.</p></div>
+        </div>
+        <div class="five-things-item">
+          <div class="num-circle">3</div>
+          <div><h4 data-editable="">Life does not need to wait.</h4><p data-editable="">Waiting for pain to be fully gone before living your life is not necessary — and often delays recovery. Meaningful participation and reduced pain can happen together.</p></div>
+        </div>
+        <div class="five-things-item">
+          <div class="num-circle">4</div>
+          <div><h4 data-editable="">You are more than a body part.</h4><p data-editable="">Reducing a person to a scan result or a diagnosis misses most of the picture. You bring context, history, meaning, and resilience that matter enormously to outcomes.</p></div>
+        </div>
+        <div class="five-things-item">
+          <div class="num-circle">5</div>
+          <div><h4 data-editable="">Curiosity is more powerful than fear.</h4><p data-editable="">Fear amplifies pain signals. Curiosity — getting genuinely interested in what your body is communicating and why — is one of the most therapeutic shifts you can make.</p></div>
+        </div>
+      </div>
+    </div>
+</section>
+
+  <section class="section section-alt" id="dare-receives" data-zone="dare-receives" data-zone-label="What Participants Receive" style="position: relative;">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-label" data-editable="">OPTION ONE:&nbsp; &nbsp;Inside the Program</span>
+        <h2 data-editable="">What you receive in the DARE to Heal</h2>
+      </div>
+      <div class="grid-3">
+        <div class="card"><div class="card-icon">🎥</div><h4 data-editable=""><span style="font-size: 1.25em;" data-gitqi-style="">Weekly Video Modules</span></h4><p data-editable="">New content is unlocked every week.<br><br>These will cover:<br>The theme of the week<br></p><div><span style="font-size: 14.88px;">Pain care nugget</span></div><div><span style="font-size: 14.88px;">Movement snacks</span></div><div><span style="font-size: 14.88px;">Breath practice</span></div><div><span style="font-size: 14.88px;">Mindfulness / awareness practice</span></div><div><span style="font-size: 14.88px;">Nervous system regulation practice (vagal tone)</span></div><div><span style="font-size: 14.88px;">Applied neurology exercises</span></div><div><span style="font-size: 14.88px;">Journal prompt</span></div><div><span style="font-size: 14.88px;">Curiosity exploration</span></div><br><br><p></p></div>
+        <div class="card"><div class="card-icon">🤾</div><h4 data-editable=""><span style="font-size: 1.25em;" data-gitqi-style="">Six Live Group Coaching calls</span></h4><p data-editable="">Connect directly synchronously with Colleen and&nbsp; with the members of your cohort.<br><br>In these calls:<br>Q &amp;A session with Colleen<br>Your updates on your experience<br>Explore a new guided experience based on the themes of the week<br><br></p></div>
+        <div class="card"><div class="card-icon">📄</div><h4 data-editable=""><span style="font-size: 1.25em;" data-gitqi-style="">Workbooks &amp; Resources</span></h4><p data-editable="">Downloadable materials that help you integrate learning, track your insights, and build a personal toolkit for ongoing support.<br><br></p><div><span style="font-size: 14.88px;">Pain care e-book</span></div><div><span style="font-size: 14.88px;">DARE checklist</span></div><div><span style="font-size: 14.88px;">Sleep hygiene PDF</span></div><div><span style="font-size: 14.88px;">Nutritional tips PDF</span></div><div><span style="font-size: 14.88px;">Dry brushing PDF</span></div><div><span style="font-size: 14.88px;">Set Yourself Up for Success PDF &amp; video</span></div><div><span style="font-size: 14.88px;">Suggested Props PDF</span></div><div><span style="font-size: 14.88px;">Play vs Work Mindset video</span></div><div><span style="font-size: 14.88px;">To Plan or Not to Plan video</span></div><p></p></div>
+        <div class="card"><div class="card-icon">🎧</div><h4 data-editable=""><span style="font-size: 1.25em;" data-gitqi-style="">Recordings &amp; Replays</span></h4><p data-editable="">Access to the DARE monthly membership where you can access ALL the past DARE webinars.</p></div>
+        <div class="card"><div class="card-icon">🌐</div><h4 data-editable=""><span style="font-size: 1.25em;" data-gitqi-style="">Community Access</span></h4><p data-editable="">Connect with a thoughtful cohort navigating similar experiences. Community is a meaningful part of the healing process.</p></div>
+        <div class="card"><div class="card-icon">💬</div><h4 data-editable=""><span style="font-size: 1.25em;" data-gitqi-style="">Cost:</span></h4><p data-editable="">$425 (tac included)</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" data-zone="dare-testimonials" data-zone-label="Testimonials" id="dare-testimonials" style="position: relative;">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-label" data-editable="">From Past Participants</span>
+        <h2 data-editable="">What the program has meant</h2>
+      </div>
+      <div class="grid-3">
+        <div class="testimonial"><blockquote data-editable="">“D.A.R.E. gave me the first real explanation of my pain that made sense. It didn’t dismiss me — it gave me tools. I feel genuinely different now.”</blockquote><cite data-editable="">— Program Participant</cite></div>
+        <div class="testimonial"><blockquote data-editable="">“I came in skeptical and left with more hope than I’d had in years. The combination of science and gentle movement is exactly what I needed.”</blockquote><cite data-editable="">— Program Participant</cite></div>
+        <div class="testimonial"><blockquote data-editable="">“Colleen holds the space with so much warmth and intelligence. I finally felt understood — not just managed.”</blockquote><cite data-editable="">— Program Participant</cite></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section" data-zone="dare-cta" data-zone-label="CTA" id="dare-cta" style="position: relative;">
+    <div class="container">
+      <span class="section-label" data-editable="">Take the First Step</span>
+      <h2 data-editable="">Your pain has a story. This program helps you understand it.</h2>
+      <p data-editable="">Add your name to the waitlist to receive details on the next cohort, including dates, pricing, and how to register.</p>
+      <div class="btn-group" style="justify-content:center;">
+        <a href="./contact.html" class="btn btn-primary" data-editable="">Join the Waitlist</a>
+        <a href="./resources.html" class="btn btn-outline" data-editable="">Access Free Resources First</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <strong data-editable="">Colleen Jorgensen, D.O.</strong>
+        <p data-editable="">Osteopath · Movement Specialist · Pain Care Educator</p>
+        <p data-editable="">Montreal, Canada</p>
+        <div class="social-links">
+          <a href="#" data-editable="">Instagram</a>
+          <a href="#" data-editable="">YouTube</a>
+          <a href="#" data-editable="">Facebook</a>
+        </div>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./work-with-me.html">Work With Me</a>
+        <a href="./dare.html">D.A.R.E. to Heal</a>
+        <a href="./training.html">Trainings</a>
+        <a href="./speaking.html">Speaking</a>
+        <a href="./resources.html">Free Resources</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+      <div class="footer-contact">
+        <p style="color:rgba(255,255,255,.5);font-size:.85rem;margin-bottom:.5rem;" data-editable="">Questions? Reach out.</p>
+        <a href="mailto:coljorgensen13@gmail.com" data-editable="">coljorgensen13@gmail.com</a>
+        <p style="color:rgba(255,255,255,.4);font-size:.82rem;margin-top:.5rem;" data-editable="">Montreal, Canada</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p data-editable="">© 2025 Colleen Jorgensen, D.O. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+</body></html>
