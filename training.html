@@ -4,9 +4,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Professional Trainings — Colleen Jorgensen, D.O.</title>
   <meta name="description" content="Professional training programs with Colleen Jorgensen for healthcare practitioners and movement teachers working with people in chronic pain.">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Milonga:wght@400&amp;display=swap"><style>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><style>
     @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap');
-    :root{--color-primary:#5C4033;--color-secondary:#8B6F5E;--color-accent:#C17F5A;--color-bg:#FAF7F2;--color-bg-alt:#F2EDE4;--color-text:#2A1F1A;--color-text-muted:#7A6155;--font-heading:'Cormorant Garamond',Georgia,serif;--font-body:'DM Sans',system-ui,sans-serif;--space-xs:.5rem;--space-sm:1rem;--space-md:1.5rem;--space-lg:2.5rem;--space-xl:4rem;--container-width:1100px;--radius:12px;--shadow:0 4px 24px rgba(42,31,26,0.08);--color-accent-soft:#E4C7A8;--color-blush:#D4937A;--color-border:#DDD0C0;  --font-dare: 'Milonga', system-ui, sans-serif;
+    :root{--color-primary:#5C4033;--color-secondary:#8B6F5E;--color-accent:#C17F5A;--color-bg:#FAF7F2;--color-bg-alt:#F2EDE4;--color-text:#2A1F1A;--color-text-muted:#7A6155;--font-heading:'Cormorant Garamond',Georgia,serif;--font-body:'DM Sans',system-ui,sans-serif;--space-xs:.5rem;--space-sm:1rem;--space-md:1.5rem;--space-lg:2.5rem;--space-xl:4rem;--container-width:1100px;--radius:12px;--shadow:0 4px 24px rgba(42,31,26,0.08);--color-accent-soft:#E4C7A8;--color-blush:#D4937A;--color-border:#DDD0C0;  --font-dare: 'Roboto', system-ui, sans-serif;
 }
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
     html{font-size:16px;scroll-behavior:smooth;}
@@ -135,7 +135,76 @@
   </style>
   
   
-</head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"><style id="__gitqi-section-training-pathways-styles">/* Section-specific enhancements for Training Pathways */
+.pathway-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.pathway-card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.pathway-card.card-teachers { border-top: 4px solid var(--color-primary); }
+.pathway-card.card-therapists { border-top: 4px solid var(--color-secondary); }
+.pathway-card.card-dare { border-top: 4px solid var(--color-accent); }
+
+.pathway-audience {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-md);
+  display: block;
+}
+
+.pathway-desc {
+  margin-bottom: var(--space-md);
+}
+
+.pathway-info-group {
+  margin-top: auto;
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--color-border);
+}
+
+.pathway-info-group h4 {
+  font-size: 1rem;
+  margin-bottom: var(--space-xs);
+  color: var(--color-primary);
+}
+
+.pathway-sub-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: var(--space-sm);
+}
+
+.pathway-sub-list li {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-xs);
+  line-height: 1.4;
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.pathway-sub-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  font-weight: bold;
+}
+
+.pathway-note {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--color-text-muted);
+  margin-top: var(--space-sm);
+}</style></head>
 <body style="">
   <nav id="main-nav" style="">
     <div class="nav-inner">
@@ -183,45 +252,84 @@
   </section>
 
   <section class="section" data-zone="training-pathways" data-zone-label="Training Pathways" id="training-pathways" style="position: relative;">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label" data-editable="">Programs</span>
-        <h2 data-editable="">Training Pathways</h2>
-        <p data-editable="">Three distinct programs, each designed for different stages of professional development and different roles in the field.</p>
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label" data-editable="">Programs</span>
+      <h2 data-editable="">Training Pathways</h2>
+      <p data-editable="">Three distinct programs, each designed for different stages of professional development and different roles in the field.</p>
+    </div>
+
+    <div class="grid-3">
+      <!-- Teachers Program -->
+      <div class="pathway-card card-teachers">
+        <div class="pathway-card-img" style="position: relative;">
+          <img src="./assets/yoga_class.jpeg" alt="Pain Care Aware: Teachers program" data-editable-image="" style="cursor: pointer;">
+        </div>
+        <div class="pathway-card-body">
+          <span class="pill" style="margin-bottom: var(--space-sm);" data-editable="">Certificate Program</span>
+          <h3 data-editable="">Pain Care Aware: Teachers</h3>
+          <span class="pathway-audience" data-editable="">For: Movement teachers who work in a group setting.</span>
+          <p class="pathway-desc" data-editable="">A structured certificate program that equips practitioners with a thorough grounding in pain care, providing you the foundation to teach with safety, sensitivity, and evidence-informed guidance in group settings.<br><br><span style="font-size: 14.88px;">By combining pain neuroscience with applied tools and real-world scenarios, this program helps you develop the confidence to respond to what you see in front of you, while supporting the diverse needs of participants within a group.</span></p>
+          
+          <div class="pathway-info-group">
+            <h4 data-editable="">This Certificate has two parts:</h4>
+            <ul class="pathway-sub-list">
+              <li data-editable=""><strong>Online asynchronous foundations course:</strong> The theory of pain science with PCA (30 hours).</li>
+              <li data-editable=""><strong>Practicum:</strong> Synchronous online with Colleen (30 hours over 4 days).</li>
+            </ul>
+          </div>
+          <a href="./contact.html" class="card-link" data-editable="">Get the details</a>
+        </div>
       </div>
-      <div class="grid-3">
-        <div class="card" style="border-top:4px solid var(--color-primary);">
-          <span class="pill" style="margin-bottom:var(--space-sm);display:inline-block;" data-editable="">Certificate Program</span>
-          <h3 data-editable=""><b>Pain Care Aware Certificate<br></b><span style="font-size: 0.875em;">For: Movement teachers who work in a group setting.<br></span><br><br></h3>
-          <p data-editable=""><br>A structured certificate program that equips practitioners with a thorough grounding in pain care, providing you the foundation to teach with safety, sensitivity, and evidence-informed guidance in group settings.<br><br><br><br><br><br></p>
-          <p data-editable="">This Certificate has two parts:<br><br>Online asynchronous foundations course<br>The theory of pain science with PCA.&nbsp; (30hours).<br><br>Practicum<br>Synchronous online with Colleen -&nbsp;<br>(30 hours over 4 days).&nbsp;</p>
-          <a href="./contact.html" class="card-link">Get on the waitlist →</a>
+
+      <!-- Therapists Program -->
+      <div class="pathway-card card-therapists">
+        <div class="pathway-card-img" style="position: relative;">
+          <img src="./assets/physio.jpeg" alt="Pain Care Aware: Therapists program" data-editable-image="" style="cursor: pointer;">
         </div>
-        <div class="card" style="border-top:4px solid var(--color-secondary);">
-          <span class="pill pill-teal" style="margin-bottom:var(--space-sm);display:inline-block;" data-editable="">Certificate Program</span>
-          <h3 data-editable=""><b>Pain Care Aware Therapeutic Certificate<br></b><span style="font-size: 0.875em;">For: Manual therapists and health care professionals who work 1:1<br></span><br><br></h3>
-          <p data-editable="">Ideal for physiotherapists, osteopaths, chiropractors, massage therapists, yoga therapists, and other hands-on practitioners, this program provides a foundation in pain neuroscience alongside practical tools to help you better understand pain, communicate more effectively with clients, and adapt your approach in real time.</p>
-          <p data-editable=""><br><br>This Certificate has two parts:<br></p><div><br></div><div><span style="font-size: 14.88px;">Online asynchronous</span><span style="color: var(--color-text-muted); font-size: 0.93rem; font-family: var(--font-body);">&nbsp;</span><span style="color: var(--color-text-muted); font-size: 0.93rem; font-family: var(--font-body);">foundations course</span></div><div><span style="font-size: 14.88px;">The theory of pain science with PCA.&nbsp; (30hours).</span></div><div><br></div><div><span style="font-size: 14.88px;">Practicum</span></div><div><span style="font-size: 14.88px;">Synchronous online with Colleen<br></span>(30 hours over 4 days).&nbsp;<span style="font-size: 14.88px;"></span></div>&nbsp;* In this second section one of your clients may attend with you, for free.&nbsp; They will act as your case study.<p></p>
-          <a href="./contact.html" class="card-link">Get on the waitlist</a>
+        <div class="pathway-card-body">
+          <span class="pill pill-teal" style="margin-bottom: var(--space-sm);" data-editable="">Certificate Program</span>
+          <h3 data-editable="">Pain Care Aware: Therapists</h3>
+          <span class="pathway-audience" data-editable="">For: Manual therapists and health care professionals who work 1:1</span>
+          <p class="pathway-desc" data-editable="">Ideal for physiotherapists, osteopaths, chiropractors, massage therapists, yoga therapists, and other hands-on practitioners, this program provides a foundation in pain neuroscience alongside practical tools to help you better understand pain, communicate more effectively with clients, and adapt your approach in real time.</p>
+          
+          <div class="pathway-info-group">
+            <h4 data-editable="">This Certificate has two parts:</h4>
+            <ul class="pathway-sub-list">
+              <li data-editable=""><strong>Online asynchronous foundations course:</strong> The theory of pain science with PCA (30 hours).</li>
+              <li data-editable=""><strong>Practicum:</strong> Synchronous online with Colleen (30 hours over 4 days).</li>
+            </ul>
+            <p class="pathway-note" data-editable="">* In this second section one of your clients may attend with you, for free. They will act as your case study.</p>
+          </div>
+          <a href="./contact.html" class="card-link" data-editable="">Get the details</a>
         </div>
-        <div class="card" style="border-top:4px solid var(--color-accent);">
-          <span class="pill" style="background:rgba(232,132,92,.1);color:var(--color-accent);margin-bottom:var(--space-sm);display:inline-block;" data-editable="">Certificate Program</span>
-          <h3 data-editable=""><b>DARE to Heal Certificate<br></b><span style="font-size: 0.875em;">For: Movement teachers, m<span style="color: var(--color-primary); font-family: var(--font-heading); font-size: clamp(1.15rem, 2vw, 1.5rem);">anual <span style="font-size: 0.875em;">therapists, health care professionals</span></span></span><span style="color: var(--color-primary); font-family: var(--font-heading); font-size: clamp(1.15rem, 2vw, 1.5rem);"></span></h3>
-          <p data-editable=""><br></p><div><span style="font-size: 14.88px;"><br>For practitioners who want to understand pain from the inside out and bring that understanding into their clinical work.</span></div><div><span style="font-size: 14.88px;"><br></span></div><div><span style="font-size: 14.88px;">This program offers a way to experience the process firsthand, while developing the tools to support others with greater clarity, confidence, and responsiveness.</span></div><br><br><br><br>This Certificate has two parts:<br><br>Immersion <br>Join a DARE to Heal cohort to live the experience first hand and witness the transformations as they take place in real time.&nbsp;<p></p>
-          <p data-editable="">Practicum <br>
+      </div>
 
-
-
-
-
-
-
-</p><p class="p1">The 30-hour practicum with Colleen supports you in bringing this experience into your clinical work. <br>You will:<br><span style="color: var(--color-text-muted); font-size: 0.93rem; font-family: var(--font-body);">integrate what you’ve learned<br></span><span style="color: var(--color-text-muted); font-size: 0.93rem; font-family: var(--font-body);">explore the neuroscience behind the process<br></span><span style="color: var(--color-text-muted); font-size: 0.93rem; font-family: var(--font-body);">begin to apply the work in a clinical context<br></span><span style="color: var(--color-text-muted); font-size: 0.93rem; font-family: var(--font-body);">complete a case study to consolidate your learning</span></p><p></p><p></p>
-          <a href="./contact.html" class="card-link">Get on the waitlist</a>
+      <!-- DARE Program -->
+      <div class="pathway-card card-dare">
+        <div class="pathway-card-img" style="position: relative;">
+          <img src="./assets/dare.jpeg" alt="DARE to Heal Certificate program" data-editable-image="" style="cursor: pointer;">
+        </div>
+        <div class="pathway-card-body">
+          <span class="pill" style="background: rgba(232,132,92,.1); color: var(--color-accent); margin-bottom: var(--space-sm);" data-editable="">Certificate Program</span>
+          <h3 data-editable="">DARE to Heal Certificate</h3>
+          <span class="pathway-audience" data-editable="">For: Movement teachers &amp; therapists</span>
+          <p class="pathway-desc" data-editable="">For practitioners who want to understand pain from the inside out and bring that understanding into their clinical work. This program offers a way to experience the process firsthand, while developing the tools to support others with greater clarity, confidence, and responsiveness.</p>
+          
+          <div class="pathway-info-group">
+            <h4 data-editable="">This Certificate has two parts:</h4>
+            <ul class="pathway-sub-list">
+              <li data-editable=""><strong>Immersion:</strong> Join a DARE to Heal cohort to live the experience first hand and witness the transformations as they take place in real time.</li>
+              <li data-editable=""><strong>Practicum:</strong> The 30-hour practicum with Colleen supports you in bringing this experience into your clinical work.&nbsp;&nbsp;<br><br>You will: integrate what you’ve learned, explore the neuroscience behind the process, begin to apply the work in a clinical context, and complete a case study to consolidate your learning.</li>
+            </ul>
+            <p class="pathway-desc" data-editable=""><br></p>
+          </div>
+          <a href="./contact.html" class="card-link" data-editable="">Get the details</a>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <section class="section section-alt" data-zone="training-who" data-zone-label="Who This Is For" id="training-who" style="position: relative;">
     <div class="container">
