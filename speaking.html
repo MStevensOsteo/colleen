@@ -136,7 +136,97 @@
   
   
 <style id="__gitqi-section-media-highlights-styles">.media-card-pill {
-    margin-bottom: var(--space-sm);
+    margin-bottom: var(--space-xs);
+}
+
+.pathway-card-body {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 190px);
+}
+
+.pathway-card-body h4 {
+    margin-bottom: var(--space-xs);
+    font-size: 1.1rem;
+    line-height: 1.3;
+}
+
+.pathway-card-body p {
+    flex-grow: 1;
+    margin-bottom: var(--space-md);
+}
+
+.pathway-card-body .card-link {
+    margin-top: auto;
+}
+
+@media (max-width: 900px) {
+    .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+}</style><style id="__gitqi-section-featured-on-styles">.logo-section {
+  padding: var(--space-xl) 0;
+  background: var(--color-bg);
+}
+
+.logo-section-header {
+  text-align: center;
+  margin-bottom: var(--space-xl);
+}
+
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--space-xl) var(--space-lg);
+  align-items: center;
+  justify-items: center;
+}
+
+.logo-item {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-item img {
+  max-height: 48px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.logo-item:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+@media (max-width: 960px) {
+  .logo-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+  }
+}
+
+@media (max-width: 600px) {
+  .logo-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md) var(--space-sm);
+  }
+  
+  .logo-item img {
+    max-height: 38px;
+  }
 }</style></head>
 <body style="">
   <nav id="main-nav" style="">
@@ -196,12 +286,12 @@
         <p data-editable="">Colleen brings nuance, lived insight, and evidence to each of the areas below. These topics work equally well for healthcare audiences and general public listeners.</p>
       </div>
       <div class="grid-3">
-        <div class="card card-alt"><div class="card-icon">🪨</div><h4 data-editable="">Chronic Pain: What It Really Is</h4><p data-editable="">Accessible, evidence-based explanations of how chronic pain works — and why the story most people have been told is incomplete.</p></div>
-        <div class="card card-alt"><div class="card-icon">💡</div><h4 data-editable="">Pain Science &amp; Hope</h4><p data-editable="">What the latest research tells us about pain, recovery, and what is truly possible for people living with persistent symptoms.</p></div>
-        <div class="card card-alt"><div class="card-icon">⚡</div><h4 data-editable="">Nervous System &amp; Regulation</h4><p data-editable="">How the nervous system learns, amplifies, and holds pain — and what we can do to support greater safety and ease in the body.</p></div>
-        <div class="card card-alt"><div class="card-icon">🌿</div><h4 data-editable="">Movement &amp; Embodiment</h4><p data-editable="">How movement — done wisely, with awareness — can restore confidence, reduce threat, and rebuild a trusting relationship with the body.</p></div>
-        <div class="card card-alt"><div class="card-icon">💬</div><h4 data-editable="">Language, Communication &amp; Permission</h4><p data-editable="">The profound impact of how we talk about pain — with ourselves, with practitioners, and in public health messaging.</p></div>
-        <div class="card card-alt"><div class="card-icon">🎓</div><h4 data-editable="">Education for Practitioners</h4><p data-editable="">How healthcare and movement professionals can bring better pain understanding into their clinical and teaching practice.</p></div>
+        <div class="card card-alt"><div class="card-icon">🪨</div><h4 data-editable=""><span style="font-size: 1.25em;">Chronic Pain: What It Really Is</span></h4><p data-editable="">Accessible, evidence-based explanations of how chronic pain works — and why the story most people have been told is incomplete.</p></div>
+        <div class="card card-alt"><div class="card-icon">💡</div><h4 data-editable=""><span style="font-size: 1.25em;">Pain Science &amp; Hope</span></h4><p data-editable="">What the latest research tells us about pain, recovery, and what is truly possible for people living with persistent symptoms.</p></div>
+        <div class="card card-alt"><div class="card-icon">⚡</div><h4 data-editable=""><span style="font-size: 1.25em;">Nervous System &amp; Regulation</span></h4><p data-editable="">How the nervous system learns, amplifies, and holds pain — and what we can do to support greater safety and ease in the body.</p></div>
+        <div class="card card-alt"><div class="card-icon">🌿</div><h4 data-editable=""><span style="font-size: 1.25em;">Movement &amp; Embodiment</span></h4><p data-editable="">How movement — done wisely, with awareness — can restore confidence, reduce threat, and rebuild a trusting relationship with the body.</p></div>
+        <div class="card card-alt"><div class="card-icon">💬</div><h4 data-editable=""><span style="font-size: 1.25em;">Language, Communication &amp; Permission</span></h4><p data-editable="">The profound impact of how we talk about pain — with ourselves, with practitioners, and in public health messaging.</p></div>
+        <div class="card card-alt"><div class="card-icon">🎓</div><h4 data-editable=""><span style="font-size: 1.25em;">Education for Practitioners</span></h4><p data-editable="">How healthcare and movement professionals can bring better pain understanding into their clinical and teaching practice.</p></div>
       </div>
     </div>
   </section>
@@ -213,170 +303,306 @@
         <h2 data-editable="">Selected Talks &amp; Interviews</h2>
         <p data-editable="">A selection of Colleen’s recent speaking appearances and podcast features.</p>
       </div>
+
       <div class="grid-3">
+        <!-- Card 1 -->
         <div class="pathway-card">
             <div class="pathway-card-img" style="position: relative;">
-                <img src="./assets/Screenshot 2026-04-18 at 10.14.14 PM.png" alt="Media Highlight Image" data-editable-image="" style="cursor: pointer;">
+                <img src="./assets/Screenshot 2026-04-18 at 10.14.14 PM.png" alt="Blue Talks Interview" data-editable-image="" style="cursor: pointer;">
             </div>
             <div class="pathway-card-body">
                 <span class="pill media-card-pill" data-editable="">Conference</span>
-                <h4 data-editable="">Blue Talks&nbsp;<br><div><span style="font-size: 16.8px;"><b>D.A.R.E. TO HEAL - HOW TO MOVE FROM FEAR TO CURIOSITY &amp; EMPOWERMENT</b></span></div></h4>
-                <p data-editable=""></p><div><span style="font-size: 14.88px;">D.A.R.E. to Heal: Becoming your own best expert when you have pain.&nbsp; &nbsp;</span><span style="color: var(--color-text-muted); font-family: var(--font-body); font-size: 0.93rem;">Discover yourself to recover your health.</span></div><p></p>
-                <a href="#https://youtu.be/5dvvQ0Pbd8?si=qWTcjIg-AlAgimQz" class="card-link" data-editable="" target="_blank" rel="noopener noreferrer">Watch → YouTube</a>
+                <h4 data-editable="">Blue Talks: D.A.R.E. TO HEAL - HOW TO MOVE FROM FEAR TO CURIOSITY &amp; EMPOWERMENT</h4>
+                <p data-editable="">D.A.R.E. to Heal: Becoming your own best expert when you have pain. Discover yourself to recover your health.</p>
+                <a href="https://youtu.be/5dvvQ0Pbd8?si=qWTcjIg-AlAgimQz" class="card-link" data-editable="" target="_blank" rel="noopener noreferrer">Watch → YouTube</a>
             </div>
         </div>
+
+        <!-- Card 2 -->
         <div class="pathway-card">
             <div class="pathway-card-img" style="position: relative;">
-                <img src="./assets/Screenshot 2026-04-18 at 10.14.47 PM.png" alt="Media Highlight Image" data-editable-image="" style="cursor: pointer;">
+                <img src="./assets/Screenshot 2026-04-18 at 10.14.47 PM.png" alt="Brad Walsh Podcast" data-editable-image="" style="cursor: pointer;">
             </div>
             <div class="pathway-card-body">
                 <span class="pill media-card-pill" data-editable="">Podcast</span>
-                <h4 data-editable="">Brad Walsh: Empowerology (2024)<br><br></h4><h4 data-editable=""><br></h4><p data-editable=""></p><div><span style="color: var(--color-text-muted); font-family: var(--font-body);">In this episode you will learn:</span></div><div><span style="color: var(--color-text-muted); font-family: var(--font-body);">One of the reasons people remain stuck in pain.</span></div><div><span style="font-size: 14.88px;">The definition of pain.<br></span><span style="color: var(--color-text-muted); font-family: var(--font-body); font-size: 0.93rem;">How understanding the link between pain and emotion can help to resolve pain issues.</span></div><p></p>
-                <a href="#https://open.spotify.com/episode/2LWUZm05aUW5b9H7AySWuH?si=ecd0af69cc814ece&amp;nd=1&amp;dlsi=f01059e73bda4805" class="card-link" data-editable="">Listen here → Brad Walsh Podcast</a>
+                <h4 data-editable="">Brad Walsh: Empowerology (2024)</h4>
+                <p data-editable="">In this episode you will learn the reasons people remain stuck in pain, the definition of pain, and how the link between pain and emotion can help resolution.</p>
+                <a href="https://open.spotify.com/episode/2LWUZm05aUW5b9H7AySWuH?si=ecd0af69cc814ece&amp;nd=1&amp;dlsi=f01059e73bda4805" class="card-link" data-editable="" target="_blank" rel="noopener noreferrer">Listen → Brad Walsh Podcast</a>
             </div>
         </div>
+
+        <!-- Card 3 -->
         <div class="pathway-card">
             <div class="pathway-card-img" style="position: relative;">
-                <img src="./assets/Unweaving.png" alt="Media Highlight Image" data-editable-image="" style="cursor: pointer;">
+                <img src="./assets/Unweaving.png" alt="Unweaving Chronic Pain" data-editable-image="" style="cursor: pointer;">
             </div>
             <div class="pathway-card-body">
                 <span class="pill media-card-pill" data-editable="">Podcast</span>
-                <h4 data-editable="">Dr Andrea Moore: Unweaving Chronic Pain (2024)<br><span style="font-size: 16.8px;"><b>FROM PARALYSIS TO JOY&nbsp;</b></span></h4>
-                <p data-editable="">Struggling with chronic pain can feel like an insurmountable challenge, but Montreal-based Osteopath Colleen Jorgensen has made it her life's work to turn the tide on this daunting battle. In our latest episode, Colleen shares her remarkable journey from Athletic Therapy to overcoming her own spinal surgeries, which inspired her to develop a holistic approach to pain care.</p>
-                <a href="#https://www.unweavingchronicpain.com/from-paralysis-to-joy-with-colleen-jorgensen/" class="card-link" data-editable="">Listen → UnWeaving Chronic Pain Podacst</a>
+                <h4 data-editable="">Dr Andrea Moore: Unweaving Chronic Pain (2024) — FROM PARALYSIS TO JOY</h4>
+                <p data-editable="">Colleen's journey from Athletic Therapy to overcoming spinal surgeries, inspiring a holistic approach to pain care.</p>
+                <a href="https://www.unweavingchronicpain.com/from-paralysis-to-joy-with-colleen-jorgensen/" class="card-link" data-editable="" target="_blank" rel="noopener noreferrer">Listen → UnWeaving Chronic Pain Podacst</a>
             </div>
         </div>
+
+        <!-- Card 4 -->
         <div class="pathway-card">
             <div class="pathway-card-img" style="position: relative;">
-                <img src="./assets/Aligned.png" alt="Media Highlight Image" data-editable-image="" style="cursor: pointer;">
+                <img src="./assets/Aligned.png" alt="Aligned Womb Podcast" data-editable-image="" style="cursor: pointer;">
             </div>
             <div class="pathway-card-body">
                 <span class="pill media-card-pill" data-editable="">Podcast</span>
-                <h4 data-editable=""><span style="font-size: 16.8px;">Aligned Womb, Aligned You (2024)<br><b>30 SECOND TOOLS THAT CAN CANGE YOUR HORMONE HEALTH&nbsp;</b></span></h4>
-                <p data-editable="">In this week’s episode we have Colleen Jorgensen join us to really explain what is the nervous system and just how important it is for our health (and for those of you with endometriosis, you will definitely want to listen to hear what new research is telling us).</p>
-                <a href="#https://www.sheerevival.com/podcastepisodes/episode50" class="card-link" data-editable="">Listen → Aligned Womb, Aligned You Podcast</a>
+                <h4 data-editable="">Aligned Womb, Aligned You (2024): 30 SECOND TOOLS THAT CAN CHANGE YOUR HORMONE HEALTH</h4>
+                <p data-editable="">Colleen explains the nervous system and its importance for health, particularly for those navigating endometriosis.</p>
+                <a href="https://www.sheerevival.com/podcastepisodes/episode50" class="card-link" data-editable="" target="_blank" rel="noopener noreferrer">Listen → Aligned Womb, Aligned You Podcast</a>
             </div>
         </div>
+
+        <!-- Card 5 -->
         <div class="pathway-card">
             <div class="pathway-card-img" style="position: relative;">
-                <img src="./assets/Exchange.png" alt="Media Highlight Image" data-editable-image="" style="cursor: pointer;">
+                <img src="./assets/Exchange.png" alt="Pilates Exchange" data-editable-image="" style="cursor: pointer;">
             </div>
             <div class="pathway-card-body">
                 <span class="pill media-card-pill" data-editable="">Podcast</span>
-                <h4 data-editable="">The Pilates Exchange (2023)<br><b>PAIN SCIENCE &amp; PILATES</b></h4>
-                <p data-editable="">Join the conversation as we hear about how a spinal cord compression issue changed her life, why we must understand that pain does not equal damage, why mindful language matters in our teaching, why we should emphasise play in our classes, and so much more! Don’t miss out on this episode,&nbsp; start listening now</p>
-                <a href="#https://podcasts.apple.com/us/podcast/pain-science-and-pilates-with-colleen-jorgensen/id1704769014?i=1000632763770" class="card-link" data-editable="">Listen → The Pilates Exchange Podcast</a>
+                <h4 data-editable="">The Pilates Exchange (2023): PAIN SCIENCE &amp; PILATES</h4>
+                <p data-editable="">A discussion on why pain does not equal damage, why mindful language matters in teaching, and emphasizing play in classes.</p>
+                <a href="https://podcasts.apple.com/us/podcast/pain-science-and-pilates-with-colleen-jorgensen/id1704769014?i=1000632763770" class="card-link" data-editable="" target="_blank" rel="noopener noreferrer">Listen → The Pilates Exchange Podcast</a>
             </div>
         </div>
+
+        <!-- Card 6 -->
         <div class="pathway-card">
             <div class="pathway-card-img" style="position: relative;">
-                <img src="./assets/Monset.png" alt="Media Highlight Image" data-editable-image="" style="cursor: pointer;">
+                <img src="./assets/Monset.png" alt="Mindset Game" data-editable-image="" style="cursor: pointer;">
             </div>
             <div class="pathway-card-body">
                 <span class="pill media-card-pill" data-editable="">Podcast</span>
-                <h4 data-editable="">The Mindset Game Podcast (2023)<br><b>EMBRACE THE WISDOM OF YOUR BODY</b></h4>
-                <p data-editable=""><span style="color: rgb(85, 83, 83); font-family: lato-light, lato, sans-serif; font-size: 13px;">Colleen Jorgensen, D.O offers a message of hope: pain is changeable, no matter its cause or how long you’ve had it. &nbsp;Colleen is deeply curious about how the body, mind, and spirit are interconnected. Her interest in helping those living with chronic pain inspires continued studies and she brings it all together in a simple, easy to use formula D.A.R.E TO HEAL, so you can help yourself.</span></p>
-                <a href="#https://themindsetgame.libsyn.com/166-tips-for-managing-chronic-pain-interview-with-colleen-jorgensen" class="card-link" data-editable="">Listen→ The Mindset Game Podcast</a>
+                <h4 data-editable="">The Mindset Game Podcast (2023): EMBRACE THE WISDOM OF YOUR BODY</h4>
+                <p data-editable="">Colleen offers a message of hope: pain is changeable. Learn about the interconnection of body, mind, and spirit.</p>
+                <a href="https://themindsetgame.libsyn.com/166-tips-for-managing-chronic-pain-interview-with-colleen-jorgensen" class="card-link" data-editable="" target="_blank" rel="noopener noreferrer">Listen → The Mindset Game Podcast</a>
             </div>
         </div>
-        <!-- START: Added 3 more rows of boxes (9 cards total) -->
+
+        <!-- Card 7 -->
         <div class="pathway-card">
             <div class="pathway-card-img" style="position: relative;">
-                <img src="./assets/Lifeology.png" alt="Media Highlight Image" data-editable-image="" style="cursor: pointer;">
+                <img src="./assets/Lifeology.png" alt="Lifeology Radio" data-editable-image="" style="cursor: pointer;">
             </div>
             <div class="pathway-card-body">
                 <span class="pill media-card-pill" data-editable="">Podcast</span>
-                <h4 data-editable=""><div><span style="font-size: 16.8px;">James Miller: Lifeology&nbsp; Radio<strong>&nbsp;</strong>(2023)<br><strong>IF YOU LIVE WITH CHRONIC PAIN</strong></span></div></h4>
-                <p data-editable=""></p><div><span style="font-size: 14.88px;">D.A.R.E. to Heal: Becoming your own best expert when you have pain.&nbsp; &nbsp;</span><span style="color: var(--color-text-muted); font-family: var(--font-body); font-size: 0.93rem;">Discover yourself to recover your health.</span></div><p></p>
-                <a href="#https://youtu.be/5dvvQ0Pbd8?si=qWTcjIg-AlAgimQz" class="card-link" data-editable="" target="_blank" rel="noopener noreferrer">Watch → YouTube</a>
+                <h4 data-editable="">James Miller: Lifeology Radio (2023) — IF YOU LIVE WITH CHRONIC PAIN</h4>
+                <p data-editable="">You can do a lot to treat yourself and move from fearful to curious.</p>
+                <a href="https://youtu.be/5dvhttps://jamesmillerlifeology.com/if-you-live-with-chronic-pain-colleen-jorgensen/?fbclid=IwAR184-U49NNaYYWZZydi43xqH5oaig5ZekaR70KuhtmMhTLnja-VDg4vckIvQ0Pbd8?si=qWTcjIg-AlAgimQz" class="card-link" data-editable="" target="_blank" rel="noopener noreferrer">Watch → Lifeology</a>
             </div>
         </div>
+
+        <!-- Card 8 -->
         <div class="pathway-card">
             <div class="pathway-card-img" style="position: relative;">
-                <img src="./assets/Grit.png" alt="Media Highlight Image" data-editable-image="" style="cursor: pointer;">
+                <img src="./assets/Grit.png" alt="Grit Podcast" data-editable-image="" style="cursor: pointer;">
             </div>
             <div class="pathway-card-body">
                 <span class="pill media-card-pill" data-editable="">Podcast</span>
-                <h4 data-editable=""><span style="font-size: 16.8px;">Kelly Falardeau: Grits, Guts &amp; Courage&nbsp; (2023)<br><strong>EMBRACING WISDOM WITHIN<br></strong><br></span></h4><h4 data-editable=""><br></h4><p data-editable=""></p><div><span style="color: var(--color-text-muted); font-family: var(--font-body);">In this episode you will learn:</span></div><div><span style="color: var(--color-text-muted); font-family: var(--font-body);">One of the reasons people remain stuck in pain.</span></div><div><span style="font-size: 14.88px;">The definition of pain.<br></span><span style="color: var(--color-text-muted); font-family: var(--font-body); font-size: 0.93rem;">How understanding the link between pain and emotion can help to resolve pain issues.</span></div><p></p>
-                <a href="#https://open.spotify.com/episode/2LWUZm05aUW5b9H7AySWuH?si=ecd0af69cc814ece&amp;nd=1&amp;dlsi=f01059e73bda4805" class="card-link" data-editable="">Listen here → Brad Walsh Podcast</a>
+                <h4 data-editable="">Kelly Falardeau: Grits, Guts &amp; Courage (2023) — EMBRACING WISDOM WITHIN</h4>
+                <p data-editable="">A resilient individual with an inspiring story of courage and acceptance.</p>
+                <a href="https://www.youtube.com/watch?v=zgWdvlOLkPE" class="card-link" data-editable="" target="_blank" rel="noopener noreferrer">Listen → YouTube</a>
             </div>
         </div>
+
+        <!-- Card 9 -->
         <div class="pathway-card">
             <div class="pathway-card-img" style="position: relative;">
-                <img src="./assets/Work_In.png" alt="Media Highlight Image" data-editable-image="" style="cursor: pointer;">
+                <img src="./assets/Work_In.png" alt="Ericka Thomas Podcast" data-editable-image="" style="cursor: pointer;">
             </div>
             <div class="pathway-card-body">
                 <span class="pill media-card-pill" data-editable="">Podcast</span>
-                <h4 data-editable="">Ericka Thomas: The Work IN to move out of stress, tension &amp; anxiety&nbsp; (2023)<br><strong>FIT PRO SUCCESS SERIES</strong></h4>
-                <p data-editable=""></p><div><span style="font-size: 14.88px;">Fit pro success series: Communication and co-regulation with Colleen Jorgensen</span></div><div><br></div><p></p>
-                <a href="#https://www.unweavingchronicpain.com/from-paralysis-to-joy-with-colleen-jorgensen/" class="card-link" data-editable="">Listen → UnWeaving Chronic Pain Podacst</a>
+                <h4 data-editable="">Ericka Thomas: The Work IN — FIT PRO SUCCESS SERIES</h4>
+                <p data-editable="">Communication and co-regulation with Colleen Jorgensen in the fit pro success series.</p>
+                <a href="https://www.buzzsprout.com/1589332/episodes/12440294" class="card-link" data-editable="" target="_blank" rel="noopener noreferrer">Listen → BuzzSprout</a>
             </div>
         </div>
+
+        <!-- Card 10 -->
         <div class="pathway-card">
             <div class="pathway-card-img" style="position: relative;">
-                <img src="./assets/Periods.png" alt="Media Highlight Image" data-editable-image="" style="cursor: pointer;">
+                <img src="./assets/Periods.png" alt="Shee Revival" data-editable-image="" style="cursor: pointer;">
             </div>
             <div class="pathway-card-body">
                 <span class="pill media-card-pill" data-editable="">Podcast</span>
-                <h4 data-editable=""><div><span style="font-size: 16.8px;">Shee Revival: Aligned Womb, Aligned You </span><b style="font-size: 16.8px;">PAINFUL PERIODS</b></div></h4>
-                <p data-editable=""></p><div><span style="font-size: 14.88px;">D.A.R.E. to Heal: Becoming your own best expert when you have pain.&nbsp; &nbsp;</span><span style="color: var(--color-text-muted); font-family: var(--font-body); font-size: 0.93rem;">Discover yourself to recover your health.</span></div><p></p>
-                <a href="#https://youtu.be/5dvvQ0Pbd8?si=qWTcjIg-AlAgimQz" class="card-link" data-editable="" target="_blank" rel="noopener noreferrer">Watch → YouTube</a>
+                <h4 data-editable="">Shee Revival: Aligned Womb, Aligned You — PAINFUL PERIODS</h4>
+                <p data-editable="">Are Painful Periods Making You Dread Your Cycle? Interview with Colleen Jorgensen ,D.O.</p>
+                <a href="https://podcasters.spotify.com/pod/show/kate-nguy/episodes/15--Are-Painful-Periods-Making-You-Dread-Your-Cycle--with-Colleen-Jorgensen-e20g4h1/a-a9gevo3" class="card-link" data-editable="" target="_blank" rel="noopener noreferrer">Listen → Spotify</a>
             </div>
         </div>
+
+        <!-- Card 11 -->
         <div class="pathway-card">
             <div class="pathway-card-img" style="position: relative;">
-                <img src="./assets/Infertility.png" alt="Media Highlight Image" data-editable-image="" style="cursor: pointer;">
+                <img src="./assets/Infertility.png" alt="Infertility Podcast" data-editable-image="" style="cursor: pointer;">
             </div>
             <div class="pathway-card-body">
                 <span class="pill media-card-pill" data-editable="">Podcast</span>
-                <h4 data-editable=""><div><span style="color: var(--color-primary); font-family: var(--font-heading);">Infertility - Breaking the Silence&nbsp;</span></div></h4><h4 data-editable=""><br></h4><p data-editable=""></p><div><span style="color: var(--color-text-muted); font-family: var(--font-body);">In this episode you will learn:</span></div><div><span style="color: var(--color-text-muted); font-family: var(--font-body);">One of the reasons people remain stuck in pain.</span></div><div><span style="font-size: 14.88px;">The definition of pain.<br></span><span style="color: var(--color-text-muted); font-family: var(--font-body); font-size: 0.93rem;">How understanding the link between pain and emotion can help to resolve pain issues.</span></div><p></p>
-                <a href="#https://open.spotify.com/episode/2LWUZm05aUW5b9H7AySWuH?si=ecd0af69cc814ece&amp;nd=1&amp;dlsi=f01059e73bda4805" class="card-link" data-editable="">Listen here → Brad Walsh Podcast</a>
+                <h4 data-editable="">Sarah Willougby - Infertility&nbsp;<br>HOW TO COPE WITH PHYSICAL PAIN</h4>
+                <p data-editable="">How to Cope with Physical Pain - Conversation with Osteopath Colleen Jorgensen, D.O.</p>
+                <a href="https://open.spotify.com/episode/2LWUZm05aUW5b9H7AySWuH" class="card-link" data-editable="" target="_blank" rel="noopener noreferrer">Listen here → Spotify</a>
             </div>
         </div>
+
+        <!-- Card 12 -->
         <div class="pathway-card">
             <div class="pathway-card-img" style="position: relative;">
-                <img src="./assets/Work_IN63.png" alt="Media Highlight Image" data-editable-image="" style="cursor: pointer;">
+                <img src="./assets/Work_IN63.png" alt="Ericka Thomas Podcast" data-editable-image="" style="cursor: pointer;">
             </div>
             <div class="pathway-card-body">
                 <span class="pill media-card-pill" data-editable="">Podcast</span>
-                <h4 data-editable=""></h4><h4 data-editable="">Ericka Thomas: The Work IN to move out of stress, tension &amp; anxiety&nbsp; (2023)</h4><br>
-                <p data-editable="">Communicating permission, exploration and play in pain care and trauma.</p>
-                <a href="#https://www.unweavingchronicpain.com/from-paralysis-to-joy-with-colleen-jorgensen/" class="card-link" data-editable="">Listen → UnWeaving Chronic Pain Podacst</a>
+                <h4 data-editable="">Ericka Thomas: The Work IN — COMMUNICATING PERMISSION, EXPLORATION AND PLAY</h4>
+                <p data-editable="">Discussion on communicating permission, exploration and play within pain care and trauma-informed practices.</p>
+                <a href="https://www.buzzsprout.com/1589332/episodes/9840498" class="card-link" data-editable="" target="_blank" rel="noopener noreferrer">Listen → Buzzsprout</a>
             </div>
         </div>
+
+        <!-- Card 13 -->
         <div class="pathway-card">
             <div class="pathway-card-img" style="position: relative;">
-                <img src="./assets/Connecting.png" alt="Media Highlight Image" data-editable-image="" style="cursor: pointer;">
+                <img src="./assets/Connecting.png" alt="Working In Yoga" data-editable-image="" style="cursor: pointer;">
             </div>
             <div class="pathway-card-body">
                 <span class="pill media-card-pill" data-editable="">Podcast</span>
-                <h4 data-editable=""><div><span style="font-size: 16.8px;">Working In Yoga Podcast&nbsp;<br><b>CONNECTING THE DOTS: A DISCUSSION ON SHARING ALL OF US IN OUR WORK</b></span></div></h4>
-                <p data-editable=""></p><div><span style="font-size: 14.88px;">D.A.R.E. to Heal: Becoming your own best expert when you have pain.&nbsp; &nbsp;</span><span style="color: var(--color-text-muted); font-family: var(--font-body); font-size: 0.93rem;">Discover yourself to recover your health.</span></div><p></p>
-                <a href="#https://youtu.be/5dvvQ0Pbd8?si=qWTcjIg-AlAgimQz" class="card-link" data-editable="" target="_blank" rel="noopener noreferrer">Watch → YouTube</a>
+                <h4 data-editable="">Working In Yoga Podcast: CONNECTING THE DOTS</h4>
+                <p data-editable=""><div><span style="font-size: 14.88px;">We chatted about how to create your own path.</span></div><div><span style="font-size: 14.88px;">In my work I blend Athletic Therapy, Osteopathy, yoga, Pilates, somatics, mindfulness and pain science.</span></div><div><span style="font-size: 14.88px;">Rebecca and I talked about different ways to blend various methods to create a unique niche that works for you.</span></div></p>
+                <a href="https://youtu.be/5dvvQ0Pbd8?si=qWTcjIg-AlAgimQz" class="card-link" data-editable="" target="_blank" rel="noopener noreferrer">Watch → YouTube</a>
             </div>
         </div>
+
+        <!-- Card 14 -->
         <div class="pathway-card">
             <div class="pathway-card-img" style="position: relative;">
-                <img src="./assets/Work_in17.png" alt="Media Highlight Image" data-editable-image="" style="cursor: pointer;">
+                <img src="./assets/Work_in17.png" alt="The Work IN Part 4" data-editable-image="" style="cursor: pointer;">
             </div>
             <div class="pathway-card-body">
                 <span class="pill media-card-pill" data-editable="">Podcast</span>
-                <h4 data-editable=""></h4><h4 data-editable="" style="font-family: &quot;Cormorant Garamond&quot;, Georgia, serif; color: rgb(92, 64, 51); font-size: 16.8px;">Ericka Thomas: The Work IN to move out of stress, tension &amp; anxiety&nbsp; (2023)<br>THE INVISIBILITY OF CHRONIC PAIN&nbsp; &amp; TRAUMA</h4><h4 data-editable=""><br></h4><p data-editable=""></p><div><span style="color: var(--color-text-muted); font-family: var(--font-body);">In this episode you will learn:</span></div><div><span style="color: var(--color-text-muted); font-family: var(--font-body);">One of the reasons people remain stuck in pain.</span></div><div><span style="font-size: 14.88px;">The definition of pain.<br></span><span style="color: var(--color-text-muted); font-family: var(--font-body); font-size: 0.93rem;">How understanding the link between pain and emotion can help to resolve pain issues.</span></div><p></p>
-                <a href="#https://open.spotify.com/episode/2LWUZm05aUW5b9H7AySWuH?si=ecd0af69cc814ece&amp;nd=1&amp;dlsi=f01059e73bda4805" class="card-link" data-editable="">Listen here → Brad Walsh Podcast</a>
+                <h4 data-editable="">Ericka Thomas: The Work IN — THE INVISIBILITY OF CHRONIC PAIN &amp; TRAUMA (PART 4)</h4>
+                <p data-editable="">The invisible nature of living with chronic pain while at the same time having it affect every aspect of life. The difficulty relating to people around us and how important it is as a patient to be heard.&nbsp;</p>
+                <a href="https://www.buzzsprout.com/1589332/episodes/8107790" class="card-link" data-editable="" target="_blank" rel="noopener noreferrer">Listen here → BuzzSprout</a>
             </div>
         </div>
+
+        <!-- Card 15 -->
         <div class="pathway-card">
             <div class="pathway-card-img" style="position: relative;">
-                <img src="./assets/Work_in16.png" alt="Media Highlight Image" data-editable-image="" style="cursor: pointer;">
+                <img src="./assets/Work_in16.png" alt="The Work IN Part 3" data-editable-image="" style="cursor: pointer;">
             </div>
             <div class="pathway-card-body">
                 <span class="pill media-card-pill" data-editable="">Podcast</span>
-                <h4 data-editable=""></h4><h4 data-editable="" style="font-family: &quot;Cormorant Garamond&quot;, Georgia, serif; color: rgb(92, 64, 51); font-size: 16.8px;">Ericka Thomas: The Work IN to move out of stress, tension &amp; anxiety&nbsp; (2023)<br>GIVING THE BODY A NEW STORY</h4>
-                <p data-editable="">Connections - The Polyvagal Theory and Chronic Pain Pt 3:&nbsp; Giving the body a new story through movement, breath, effort &amp; ease with Colleen Jorgensen, D.O.</p>
-                <a href="#https://www.unweavingchronicpain.com/from-paralysis-to-joy-with-colleen-jorgensen/" class="card-link" data-editable="">Listen → UnWeaving Chronic Pain Podacst</a>
+                <h4 data-editable="">Ericka Thomas: The Work IN — GIVING THE BODY A NEW STORY (PART 3)</h4>
+                <p data-editable="">Connections between the breath and the nervous system and how we can quickly activate or calm the nervous system using the breath. We discuss how important it is to give yourself the space and grace to rest and allow the body to do the work to repair and heal.&nbsp;</p>
+                <a href="https://www.buzzsprout.com/1589332/episodes/8107655" class="card-link" data-editable="" target="_blank" rel="noopener noreferrer">Listen → Buzzsprout</a>
             </div>
         </div>
-        <!-- END: Added 3 more rows of boxes (9 cards total) -->
+
+        <!-- Card 16 -->
+        <div class="pathway-card">
+            <div class="pathway-card-img" style="position: relative;">
+                <img src="./assets/Work_In13.png" alt="The Work IN Part 2" data-editable-image="" style="cursor: pointer;">
+            </div>
+            <div class="pathway-card-body">
+                <span class="pill media-card-pill" data-editable="">Podcast</span>
+                <h4 data-editable="">Ericka Thomas: The Work IN — POLYVAGAL AND CHRONIC PAIN (PART 2)</h4>
+                <p data-editable="">The 3 hierarchical stress states + to hybrid states of the nervous system and why we need them for balance. Then we explore simple ways that we can get back to our social engagement system when we're feeling too activated and how to energize ourselves when we feel too calm</p>
+                <a href="https://www.buzzsprout.com/1589332/episodes/8060864" class="card-link" data-editable="" target="_blank" rel="noopener noreferrer">Listen → BuzzSprout</a>
+            </div>
+        </div>
+
+        <!-- Card 17 -->
+        <div class="pathway-card">
+            <div class="pathway-card-img" style="position: relative;">
+                <img src="./assets/Work_In13.png" alt="The Work IN Part 1" data-editable-image="" style="cursor: pointer;">
+            </div>
+            <div class="pathway-card-body">
+                <span class="pill media-card-pill" data-editable="">Podcast</span>
+                <h4 data-editable="">Ericka Thomas: The Work IN — POLYVAGAL THEORY AND CHRONIC PAIN (PART 1)</h4>
+                <p data-editable="">Our nervous system is designed to protect us at all times from all things and because of that it is connected to every system in our body. When we are suffering from an injury, chronic pain or illness, big t or little t trauma, chronic stress and anxiety it’s easy to forget just how important those connections are to our physical, mental and emotional health.</p>
+                <a href="https://www.buzzsprout.com/1589332/episodes/8035774" class="card-link" data-editable="" target="_blank" rel="noopener noreferrer">Listen → BuzzSprout</a>
+            </div>
+        </div>
+
+        <!-- Card 18 -->
+        <div class="pathway-card">
+            <div class="pathway-card-img" style="position: relative;">
+                <img src="./assets/Vagal.png" alt="Vagal Tone Tango" data-editable-image="" style="cursor: pointer;">
+            </div>
+            <div class="pathway-card-body">
+                <span class="pill media-card-pill" data-editable="">Podcast</span>
+                <h4 data-editable="">The Vagal Tone Tango - An Embodied Exploration</h4>
+                <p data-editable="">Speaker at the 35th Annual BMCA Conference.</p>
+                <a href="https://www.youtube.com/playlist?list=PLlKtRUPkSovq6C2JCd2Szy6opDZY2eDU7" class="card-link" data-editable="" target="_blank" rel="noopener noreferrer">Watch → YouTube</a>
+            </div>
+        </div>
+
+        <!-- Card 19 -->
+        <div class="pathway-card">
+            <div class="pathway-card-img" style="position: relative;">
+                <img src="./assets/Live.png" alt="Instagram Live" data-editable-image="" style="cursor: pointer;">
+            </div>
+            <div class="pathway-card-body">
+                <span class="pill media-card-pill" data-editable="">IG Live</span>
+                <h4 data-editable="">Conversation with Maggie from Embodia</h4>
+                <p data-editable=""><div><span style="font-size: 14.88px;">-How we can shift our language to better serve those in pain?</span></div><div><span style="font-size: 14.88px;">-As a practitioner or teacher how can I start incorporating this type of mind-body approach with patients / students?</span></div></p>
+                <a href="https://www.instagram.com/reel/CTBD6eWowF6/" class="card-link" data-editable="" target="_blank" rel="noopener noreferrer">Watch → Instagram</a>
+            </div>
+        </div>
+
+        <!-- Card 20 -->
+        <div class="pathway-card">
+            <div class="pathway-card-img" style="position: relative;">
+                <img src="./assets/Carri.png" alt="Drishti Yoga Interview" data-editable-image="" style="cursor: pointer;">
+            </div>
+            <div class="pathway-card-body">
+                <span class="pill media-card-pill" data-editable="">Instagram</span>
+                <h4 data-editable="">An Interview About Pain Care Awareness with Drishti Yoga (2021)</h4>
+                <p data-editable=""><div><span style="font-size: 14.88px;">A brief summary of Colleen's pain story</span></div><div><span style="font-size: 14.88px;">How the language we use as teachers and practitioners affects the person living with pain</span></div><div><span style="font-size: 14.88px;">Pain Care Aware (PCA) teacher training program Level I and II</span></div></p>
+                <a href="https://www.instagram.com/p/CMz4d45lJHe/" class="card-link" data-editable="" target="_blank" rel="noopener noreferrer">Watch → Instagram</a>
+            </div>
+        </div>
+
+        <!-- Card 21 -->
+        <div class="pathway-card">
+            <div class="pathway-card-img" style="position: relative;">
+                <img src="./assets/WI2.png" alt="West Island Blog" data-editable-image="" style="cursor: pointer;">
+            </div>
+            <div class="pathway-card-body">
+                <span class="pill media-card-pill" data-editable="">Media</span>
+                <h4 data-editable="">West Island Blog: QUESTIONS ABOUT PAIN - PART TWO</h4>
+                <p data-editable="">Answering common community questions regarding chronic pain and its management.</p>
+                <a href="https://www.youtube.com/watch?v=QHPDXg7ojdA" class="card-link" data-editable="" target="_blank" rel="noopener noreferrer">Watch → YouTube</a>
+            </div>
+        </div>
+
+        <!-- Card 22 -->
+        <div class="pathway-card">
+            <div class="pathway-card-img" style="position: relative;">
+                <img src="./assets/Journaling.png" alt="Holistic Journaling" data-editable-image="" style="cursor: pointer;">
+            </div>
+            <div class="pathway-card-body">
+                <span class="pill media-card-pill" data-editable="">Media</span>
+                <h4 data-editable="">Holistic Journaling: THERE ARE NO PAIN FIBRES IN THE BODY</h4>
+                <p data-editable="">Guest speaker for Holistic Journaling Ink.&nbsp; Listen to a pain science education nugget combined with a guided practice. - Shinzen Young’s Emotional Reactions to Pain.</p>
+                <a href="https://www.youtube.com/watch?v=ET5D9z2bgS0" class="card-link" data-editable="" target="_blank" rel="noopener noreferrer">Watch → YouTube</a>
+            </div>
+        </div>
+
+        <!-- Card 23 -->
+        <div class="pathway-card">
+            <div class="pathway-card-img" style="position: relative;">
+                <img src="./assets/WI1.png" alt="West Island Blog Part 1" data-editable-image="" style="cursor: pointer;">
+            </div>
+            <div class="pathway-card-body">
+                <span class="pill media-card-pill" data-editable="">Media</span>
+                <h4 data-editable="">West Island Blog: QUESTIONS ABOUT PAIN - PART ONE</h4>
+                <p data-editable="">Tips on what you can do at home to help manage your pain during this time without access to your usual resources</p>
+                <a href="https://www.youtube.com/watch?v=oqkAJg5AFNU" class="card-link" data-editable="" target="_blank" rel="noopener noreferrer">Watch → YouTube</a>
+            </div>
+        </div>
       </div>
     </div>
   </section>
@@ -417,7 +643,47 @@
       <p data-editable="">Send a brief note with your show, event, or platform details and she will be in touch to discuss the fit and logistics.</p>
       <a href="./contact.html" class="btn btn-primary" data-editable="">Send a Speaking Invitation</a>
     </div>
-  </section>
+  </section><section class="logo-section" data-zone="featured-on" data-zone-label="Featured Expert On" id="featured-on" style="position: relative;">
+  <div class="container">
+    <div class="logo-section-header">
+      <span class="section-label" data-editable="">Recognition</span>
+      <h2 data-editable="">Featured Expert On</h2>
+    </div>
+    
+    <div class="logo-grid">
+      <div class="logo-item" style="position: relative;">
+        <img src="./assets/placeholder.jpg" alt="Featured Logo 1" data-editable-image="" style="cursor: pointer;">
+      </div>
+      <div class="logo-item" style="position: relative;">
+        <img src="./assets/placeholder.jpg" alt="Featured Logo 2" data-editable-image="" style="cursor: pointer;">
+      </div>
+      <div class="logo-item" style="position: relative;">
+        <img src="./assets/placeholder.jpg" alt="Featured Logo 3" data-editable-image="" style="cursor: pointer;">
+      </div>
+      <div class="logo-item" style="position: relative;">
+        <img src="./assets/placeholder.jpg" alt="Featured Logo 4" data-editable-image="" style="cursor: pointer;">
+      </div>
+      <div class="logo-item" style="position: relative;">
+        <img src="./assets/placeholder.jpg" alt="Featured Logo 5" data-editable-image="" style="cursor: pointer;">
+      </div>
+      <div class="logo-item" style="position: relative;">
+        <img src="./assets/placeholder.jpg" alt="Featured Logo 6" data-editable-image="" style="cursor: pointer;">
+      </div>
+      <div class="logo-item" style="position: relative;">
+        <img src="./assets/placeholder.jpg" alt="Featured Logo 7" data-editable-image="" style="cursor: pointer;">
+      </div>
+      <div class="logo-item" style="position: relative;">
+        <img src="./assets/placeholder.jpg" alt="Featured Logo 8" data-editable-image="" style="cursor: pointer;">
+      </div>
+      <div class="logo-item" style="position: relative;">
+        <img src="./assets/placeholder.jpg" alt="Featured Logo 9" data-editable-image="" style="cursor: pointer;">
+      </div>
+      <div class="logo-item" style="position: relative;">
+        <img src="./assets/placeholder.jpg" alt="Featured Logo 10" data-editable-image="" style="cursor: pointer;">
+      </div>
+    </div>
+  </div>
+</section>
 
   <footer>
     <div class="container footer-inner">
