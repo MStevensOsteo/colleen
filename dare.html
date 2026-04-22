@@ -258,8 +258,43 @@
     width: 100%;
   }
 }</style><style id="__gitqi-section-dare-philosophy-styles">/* all CSS needed for this section, including media queries */
+[data-zone="dare-philosophy"] .section-header p {
+  text-align: center;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+[data-zone="dare-philosophy"] .grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+}
+
 [data-zone="dare-philosophy"] .pathway-card-body {
   text-align: center;
+  padding: var(--space-md);
+}
+
+[data-zone="dare-philosophy"] .pathway-card-img {
+  position: relative;
+  height: 190px;
+  overflow: hidden;
+  background: var(--color-bg-alt);
+}
+
+[data-zone="dare-philosophy"] .pathway-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  [data-zone="dare-philosophy"] .grid-2 {
+    grid-template-columns: 1fr;
+  }
 }</style><style id="__gitqi-section-five-things-styles">/* all CSS needed for this section, including media queries */
 .five-things-container {
     max-width: 860px; /* Overrides default container max-width for this specific section */
@@ -282,6 +317,27 @@
 .five-things-item h4 {
     font-size: clamp(1.2rem, 2.5vw, 1.7rem); /* Increased font size for h4 headings */
     margin-bottom: var(--space-xs); /* Added margin below h4 for better spacing */
+}</style><style id="__gitqi-section-dare-about-styles">.section-dare-about {
+  padding: var(--space-xl) 0;
+}
+
+.section-dare-about h2 {
+  margin-bottom: var(--space-md);
+}
+
+.section-dare-about p {
+  max-width: 700px;
+  margin-bottom: var(--space-lg);
+}
+
+.section-dare-about .video-container {
+  margin-top: var(--space-lg);
+}
+
+@media (max-width: 768px) {
+  .section-dare-about .video-container {
+    margin-top: var(--space-md);
+  }
 }</style></head>
 <body style="">
   <nav id="main-nav" style="">
@@ -356,17 +412,30 @@
         </ul>
       </div>
     </div>
-  </section><section class="section" data-zone="dare-philosophy" data-zone-label="DARE Philosophy" id="dare-philosophy" style="position: relative;">
+  </section><section class="section section-dare-about" data-zone="dare-about" data-zone-label="More about Dare to Heal" id="dare-about" style="position: relative;">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label" data-editable="">They dared to heal</span>
+      <h2 data-editable="">Transforming Lives, One Person at a Time</h2>
+      <p data-editable="">Hear directly from individuals who have experienced profound transformations through the DARE to Heal program. This collection of testimonials showcases the power of our approach in navigating the complexities of chronic pain and empowering lasting change.</p>
+    </div>
+    <div class="video-container">
+      <div data-editable-video="" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:var(--radius);">
+        <iframe src="https://www.youtube.com/embed/nrmU8XIbFD0" title="YouTube video player" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+      </div>
+    </div>
+  </div>
+</section><section class="section" data-zone="dare-philosophy" data-zone-label="DARE Philosophy" id="dare-philosophy" style="position: relative;">
   <div class="container">
     <div class="section-header text-center">
       <span class="section-label" data-editable="">Our Approach to Healing</span>
       <h2 data-editable="">The DARE Program Philosophy</h2>
-      <p data-editable="">The D.A.R.E. program is built upon four core principles, designed to guide you through a transformative journey in understanding and managing chronic pain. Each letter represents a vital step towards reclaiming your life.</p>
+      <p data-editable="">The DARE program is built upon four core principles, designed to guide you through a transformative journey in understanding and managing chronic pain. Each letter represents a vital step towards reclaiming your life.</p>
     </div>
 
     <div class="grid-2">
       <div class="pathway-card">
-        <div class="pathway-card-img" style="position: relative;">
+        <div class="pathway-card-img">
           <img src="./assets/D_long.png" alt="Illustration of discovery or learning" data-editable-image="" style="cursor: pointer;">
         </div>
         <div class="pathway-card-body">
@@ -376,7 +445,7 @@
       </div>
 
       <div class="pathway-card">
-        <div class="pathway-card-img" style="position: relative;">
+        <div class="pathway-card-img">
           <img src="./assets/A_long.png" alt="Illustration of acceptance or calm" data-editable-image="" style="cursor: pointer;">
         </div>
         <div class="pathway-card-body">
@@ -386,7 +455,7 @@
       </div>
 
       <div class="pathway-card">
-        <div class="pathway-card-img" style="position: relative;">
+        <div class="pathway-card-img">
           <img src="./assets/R_long.png" alt="Illustration of reframing or new perspective" data-editable-image="" style="cursor: pointer;">
         </div>
         <div class="pathway-card-body">
@@ -396,7 +465,7 @@
       </div>
 
       <div class="pathway-card">
-        <div class="pathway-card-img" style="position: relative;">
+        <div class="pathway-card-img">
           <img src="./assets/E_long.png" alt="Illustration of engagement or participation" data-editable-image="" style="cursor: pointer;">
         </div>
         <div class="pathway-card-body">
@@ -418,22 +487,22 @@
       <div class="grid-4" style="margin-top:var(--space-lg);">
         <div class="card card-alt">
           <div class="card-icon">🪨</div>
-          <h4 data-editable="">Whole-Person Approach</h4>
+          <h4 data-editable=""><span style="font-size: 1.25em;">Whole-Person Approach</span></h4>
           <p data-editable="">Pain is not just in your body. It involves your nervous system, your history, and your context. This program addresses all of it.</p>
         </div>
         <div class="card card-alt">
           <div class="card-icon">📚</div>
-          <h4 data-editable="">Education + Practice</h4>
+          <h4 data-editable=""><span style="font-size: 1.25em;">Education + Practice</span></h4>
           <p data-editable="">Clear pain science explanations alongside practical tools you can apply to your body and daily life right away.</p>
         </div>
         <div class="card card-alt">
           <div class="card-icon">🤝</div>
-          <h4 data-editable="">Community &amp; Support</h4>
+          <h4 data-editable=""><span style="font-size: 1.25em;">Community &amp; Support</span></h4>
           <p data-editable="">Cohort-based learning means you move through the material alongside others who understand what you carry. You are not doing this alone.</p>
         </div>
         <div class="card card-alt">
           <div class="card-icon">💡</div>
-          <h4 data-editable="">Hopeful &amp; Practical</h4>
+          <h4 data-editable=""><span style="font-size: 1.25em;">Hopeful &amp; Practical</span></h4>
           <p data-editable="">DARE is grounded, not abstract. Every module connects science to lived experience so you leave with insight and genuine confidence.</p>
         </div>
       </div>
